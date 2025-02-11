@@ -20,12 +20,12 @@
   }
 
   .setting-area.on {
-    margin-top: 16px;
-    border-top: 1px solid #eee;
+    // margin-top: 16px;
+    // border-top: 1px solid #eee;
     padding-top: 0;
     padding-bottom: 2px;
     .naver-btn {
-      padding-top: 12px;
+      padding-top: 0;
       margin-bottom: 0;
       .naver {
         margin-bottom: 12px;
@@ -41,7 +41,7 @@
   }
   .ing {
  
-    width: calc(100% - 40px);
+    width: calc(100% - 0px);
     margin: 0 auto;
     &.kakao {
       border-top: 0;
@@ -107,6 +107,19 @@
         position: relative;
         padding-top: 10px;
 
+        .download{
+          display: flex;
+          padding: 0 10px;
+          justify-content: flex-end;
+          a{
+            margin-top: -10px;
+            display: inline-block;
+            font-size: 0;
+            box-sizing: border-box;
+            @include backgroundImage(36px, 36px, 'common/download.png', contain);
+            background-position: center;
+          }
+        }
         .logo {
           padding: 10px 24px;
           text-align: center;
@@ -266,6 +279,34 @@
                 }
               }
             }
+            .point-state{
+              margin: 15px 0 0 0;
+              .btn{
+                height: 51px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:#2DB400;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.5;
+                img{
+                  height:20px;
+                  margin: -2px 6px 0 0;
+                }
+                &.complete{
+                  border: 1px solid #2DB400;
+                }
+                &.disable{
+                  color:#fff;
+                }
+                &.review{
+                  border: 1px solid #2DB400;
+                  background: #2DB400;
+                  color:#fff;
+                }
+              }
+            }
           }
     
        
@@ -393,6 +434,21 @@
             @include fontStyle(16px, 19.09px, 400, #1b1b1b);
             @include letterSpacing(16px);
           }
+          img{
+            width: 17px;
+            height: 17px;
+          }
+        }
+        .agree-textarea{
+          border: 1px solid #888888;
+          background: #fff;
+          border-radius: 8px;
+          padding: 6px 12px;
+          overflow: auto;
+          height: 52px;
+          font-size: 12px;
+          line-height: 1.4;
+          margin: 0 12px;
         }
       }
 
@@ -410,6 +466,81 @@
 
     .btn {
       bottom: 16px;
+    }
+  }
+  &-club{
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @include fontStyle(20px, 28px, 600);
+      @include letterSpacing(28px);
+      img{
+        width: 95px;
+        margin-bottom: 10px;
+      }
+    }
+    .benefit{
+      margin-top: 24px;
+      p{
+        @include fontStyle(18px, 25.2px, 600);
+        margin-bottom: 6px;
+      }
+      .benefit-box{
+        background: #EDEEEF;
+        border-radius: 8px;
+        padding:10px 16px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 14px;
+        img{
+          height:41px;
+        }
+        span{
+          @include fontStyle(14px, 19.6px, 400);
+     
+        }
+      }
+    }
+    .agree-box {
+      width: 100%;
+      background-color: $white;
+      border-radius: 12px;
+      padding: 16px 0;
+      box-sizing: border-box;
+
+      .input-box {
+        position: relative;
+        width: 100%;
+        .check {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 6px 0;
+          box-sizing: border-box;
+
+          .check-text {
+            @include fontStyle(16px, 19.09px, 400, #1b1b1b);
+            @include letterSpacing(16px);
+          }
+        }
+        a img{
+          width: 17px;
+          height: 17px;
+        }
+        .agree-textarea{
+          border: 1px solid #888888;
+          background: #fff;
+          border-radius: 8px;
+          padding: 6px 12px;
+          overflow: auto;
+          height: 52px;
+          font-size: 12px;
+          line-height: 1.4;
+        }
+      }
     }
   }
 
@@ -814,5 +945,15 @@
       width: calc(100% - 40px);
       bottom: 0;
     }
+  }
+}
+.footer{
+  text-align: center;
+  padding: 5px 0 30px 0;
+  color:#ABABAB;
+  font-size: 12px;
+  line-height: 1.4;
+  span{
+    display: block;
   }
 }

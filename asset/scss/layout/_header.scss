@@ -2,6 +2,9 @@ header {
   height: 56px;
   background-color: $background;
   box-sizing: border-box;
+  &.white{
+    background-color: #fff;
+  }
 
   .inner {
     position: relative;

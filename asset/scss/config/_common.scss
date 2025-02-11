@@ -12,6 +12,9 @@ body {
   max-width: 500px;
   margin: 0 auto;
   background-color: $background;
+  &.white{
+    background-color: #fff;
+  }
 }
 
 //카카오,네이버 배경색 지정
@@ -188,15 +191,17 @@ main {
 
 // 모영숲
 .reciept-wood {
-  margin-top: 20px;
+  margin: 20px 20px;
+  background: #fff;
+  border-radius: 12px;
   text-align: center;
+  padding: 10px 0;
 
   .title {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
-    margin-bottom: 8px;
     .wood-title {
       @include fontStyle(24px,33.6px, 700, #222);
     }
@@ -208,9 +213,15 @@ main {
     }
   }
   .wood-text {
-    padding: 4px 0;
-    @include fontStyle(16px, 22.4px, 400, #222);
+    margin: 0 auto;
+    padding: 16px 0 0 0;
+    @include fontStyle(16px, 22.4px, 400, #fff);
     margin-bottom: 8px;
+    width: 288px;
+    height: 90px;
+    box-sizing: border-box;
+    @include backgroundImage(288px, 90px, 'common/bg_wood.png', contain);
+    background-position: center;
   }
   .wood-count {
     width: calc(100% - 40px);
@@ -230,10 +241,9 @@ main {
   
   .wood-state {
     width: 100%;
-    padding: 24px 20px;
+    padding: 7px 20px;
     box-sizing: border-box;
     background-color: $white;
-    margin-bottom: 24px;
     ul {
       position: relative;
       display: flex;
@@ -280,9 +290,57 @@ main {
     .wood-total {
       margin-top: 12px;
       @include fontStyle(16px, 22.4px, 400,#222);
-    strong {
-      font-weight: 700;
+      strong {
+        font-weight: 700;
+      }
     }
+    .wood-btn{
+      margin: 15px 0 5px 0;
+      a{
+        background: #D1ECE2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        img{
+          height: 34px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .club_unstart{
+    display: flex;
+    flex-direction: column;
+  }
+  .club_start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+    .wood-total {
+      margin-top: 12px;
+      @include fontStyle(16px, 22.4px, 400,#222);
+      strong {
+        font-weight: 700;
+      }
+    }
+    .wood-btn{
+      margin: 15px 0 5px 0;
+      a{
+        background: #D1ECE2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        height: 36px;
+        padding: 0 6px 0 2px;
+        img{
+          height: 24px;
+        }
+      }
     }
   }
 }

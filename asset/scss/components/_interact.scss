@@ -104,7 +104,27 @@ input[type="checkbox"] {
     height: 51px;
     background-color: $gray400;
     bottom: 16px;
-  
+  }
+  // 1개이상일경우에, 자동으로 맞춤
+  &.type-float{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0 24px 0;
+    a{
+      display: inline-block;
+      border-radius: 40px;
+      &.border{
+        color: #017F69;
+        border: 1px solid #017F69;
+      }
+      &.default{
+        color: #fff;
+        background: #017F69;
+        border: 1px solid #017F69;
+      }
+    }
   }
 
   // 배경색이 네이버 메인 컬러
@@ -418,6 +438,10 @@ button {
   &.black {
     width: 310px;
     @include backgroundImage(310px, 46px, "/common/bubble_black.png");
+  }
+  &.green {
+    width: 240px;
+    @include backgroundImage(240px, 46px, "/common/bubble_green.png");
   }
 }
 
