@@ -399,7 +399,6 @@
         }
       }
     }
-
   }
 
   // sector-agree 008 약관동의
@@ -418,8 +417,9 @@
       background-color: $white;
       border-radius: 12px;
       padding: 16px;
+      margin-bottom: 80px;
       box-sizing: border-box;
-
+      display: inline-block;
       .input-box {
         position: relative;
         width: 100%;
@@ -463,10 +463,16 @@
         }
       }
     }
-
     .btn {
       bottom: 16px;
     }
+  }
+  &-agree + .btn.bottom{
+    position: fixed !important;
+    bottom: 24px;
+    top: auto;
+    margin: 0 20px;
+    width: calc(100% - 40px) !important;
   }
   &-club{
     .title {
@@ -944,6 +950,50 @@
       position: absolute;
       width: calc(100% - 40px);
       bottom: 0;
+    }
+  }
+}
+
+.msg-point{
+  text-align: center;
+  @include fontStyle(14px, 19.6px, 400);
+  a{
+    @include fontStyle(14px, 1, 600);
+    border-bottom: 1px solid #000;
+  }
+  img{
+    height: 15px;
+  }
+}
+.shop-list{
+  border: 1px solid #888888;
+  border-radius: 8px;
+  margin: 10px 66px;
+  background: #fff;
+  position: relative;
+  &:after{
+    content:"";
+    @include backgroundImage(14px, 10px, 'common/ico_top.png', contain);
+    background-position: 0 0;
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    top: -8px;
+    right: 28px;
+  }
+  display: flex;
+  flex-direction: column;
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px; 
+    li{
+      width: calc(100% / 3);
+      img{
+        width: 100%;
+      }
     }
   }
 }

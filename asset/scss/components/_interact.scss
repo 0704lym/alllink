@@ -147,7 +147,7 @@ input[type="checkbox"] {
   //배경색 기본 메인 컬러
   &.green {
     position: relative;
-    margin: 66px auto 16px;
+    margin: 0 auto 16px;
     border: 1px solid $primary;
     background-color: #017f691a;
     width: calc(100% - 40px);
@@ -244,6 +244,16 @@ input[type="checkbox"] {
   &.green-line {
     border : 1px solid $primary;
     color:$primary;
+  }
+  &.green-bg{
+    background: #D1ECE2;
+    border: none;
+  }
+  &.btn-small{
+    height:37px;
+    a{
+    padding: 9px 0;
+    }
   }
 
   &.primary {

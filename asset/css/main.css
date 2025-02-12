@@ -763,7 +763,7 @@ input[type=checkbox]:checked + label:after {
 }
 .btn.green {
   position: relative;
-  margin: 66px auto 16px;
+  margin: 0 auto 16px;
   border: 1px solid #017F69;
   background-color: rgba(1, 127, 105, 0.1019607843);
   width: calc(100% - 40px);
@@ -848,6 +848,16 @@ input[type=checkbox]:checked + label:after {
 .btn.green-line {
   border: 1px solid #017F69;
   color: #017F69;
+}
+.btn.green-bg {
+  background: #D1ECE2;
+  border: none;
+}
+.btn.btn-small {
+  height: 37px;
+}
+.btn.btn-small a {
+  padding: 9px 0;
 }
 .btn.primary {
   background-color: #017F69;
@@ -1727,7 +1737,9 @@ header .inner .menu-list li.on {
   background-color: #fff;
   border-radius: 12px;
   padding: 16px;
+  margin-bottom: 80px;
   box-sizing: border-box;
+  display: inline-block;
 }
 .sector-agree .agree-box .input-box {
   position: relative;
@@ -1775,6 +1787,13 @@ header .inner .menu-list li.on {
 }
 .sector-agree .btn {
   bottom: 16px;
+}
+.sector-agree + .btn.bottom {
+  position: fixed !important;
+  bottom: 24px;
+  top: auto;
+  margin: 0 20px;
+  width: calc(100% - 40px) !important;
 }
 .sector-club .title {
   display: flex;
@@ -2270,6 +2289,64 @@ header .inner .menu-list li.on {
   position: absolute;
   width: calc(100% - 40px);
   bottom: 0;
+}
+
+.msg-point {
+  text-align: center;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  font-weight: 400;
+  color: #222;
+}
+.msg-point a {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.28px;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 1px solid #000;
+}
+.msg-point img {
+  height: 15px;
+}
+
+.shop-list {
+  border: 1px solid #888888;
+  border-radius: 8px;
+  margin: 10px 66px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.shop-list:after {
+  content: "";
+  width: 14px;
+  height: 10px;
+  background-image: url("../image/common/ico_top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  position: absolute;
+  top: -8px;
+  right: 28px;
+}
+.shop-list ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.shop-list ul li {
+  width: 33.3333333333%;
+}
+.shop-list ul li img {
+  width: 100%;
 }
 
 .footer {
