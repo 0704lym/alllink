@@ -10,6 +10,7 @@
     font-style: #{$font-style};
 
     src: url("../font/#{$font-name}.woff") format("woff"),
+    url("../font/#{$font-name}.otf") format("opentype"),
       url("../font/#{$font-name}.ttf") format("truetype");
   }
 }

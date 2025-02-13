@@ -29,12 +29,46 @@
       width: 100%;
       @include fontStyle(14px, 19.6px, 400, $gray500);
       text-align: center;
+      .app{
+        height:16px;
+      }
     }
 
     .close {
       position: absolute;
       top: 0;
       right: 12px;
+    }
+  }
+  .btn-go{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: calc(100% - 30px);
+    background: #D1ECE2;
+    color:#000;
+    border-radius:100px;
+    @include fontStyle(19px, 26.6px, 400, $gray500);
+    padding: 11px 0;
+    img{
+      height: 14.5px;
+    }
+  }
+  .btn-go + .btn-go{
+    margin-top: 10px;
+  }
+  .btn-review{
+    text-align: center;
+    display: block;
+    margin: 4px auto 0 auto;
+    width: calc(100% - 30px);
+    background: #DCDEE0;
+    color:#000;
+    border-radius:100px;
+    @include fontStyle(19px, 26.6px, 400, $gray500);
+    padding: 11px 0;
+    img{
+      height: 14.5px;
     }
   }
 
@@ -59,7 +93,257 @@
   &.one-btn {
     padding-top: 12px;
     .popup-cont {
+      padding-top: 0;
       padding-bottom: 28px;
+    }
+  }
+  &.error,
+  &.complete{
+    .popup-title{
+      position: absolute;
+      border-bottom: 1px solid #DCDEE0;
+      padding: 8px 12px;
+      font-family: "NanumSquare";
+      @include fontStyle(23px, 32.2px, 400, #000);
+      width: 100%;
+      text-align: left;
+      &.h2{ 
+       @include fontStyle(18px, 25.2px, 400, #000);
+      }
+    }
+    .popup-cont {
+      padding-top: 60px;
+      padding-bottom: 20px;
+      text-align: left;
+      border-bottom: none;
+      .close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+      }
+      .sub-text {
+        display: inline-block;
+        width: 100%;
+        font-family: "NanumSquare";
+        @include fontStyle(21px, 29.4px, 400, $gray500);
+        text-align: left;
+        padding: 0 12px;
+        box-sizing: border-box;
+        em{
+          font-style: normal;
+          @include fontStyle(15px, 27px, 400, $gray500);
+        }
+      }
+      &.type-alert{
+        padding-bottom: 90px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 96px;
+          height: 77px;
+          bottom: 0;
+          right: 40px;
+          @include backgroundImage(96px, 77px, "common/ico_attention.png");
+        }
+      }
+      &.type-public{
+        padding-bottom: 106px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 90px;
+          height: 96px;
+          bottom: 10px;
+          right: 40px;
+          @include backgroundImage(90px, 96px, "common/ico_public.png");
+        }
+      }
+      &.type-won{
+        padding-bottom: 106px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 107px;
+          height: 96px;
+          bottom: 10px;
+          right: 40px;
+          @include backgroundImage(107px, 86px, "common/ico_won.png");
+        }
+      }
+      &.type-review{
+        padding-bottom: 106px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 118px;
+          height: 95px;
+          bottom: 10px;
+          right: 40px;
+          @include backgroundImage(118px, 95px, "common/ico_review.png");
+        }
+      }
+      &.type-thanku{
+        padding-bottom: 86px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 118px;
+          height: 95px;
+          bottom: 10px;
+          right: 40px;
+          @include backgroundImage(118px, 95px, "common/ico_thanku.png");
+        }
+      }
+      &.type-forest{
+        padding-bottom: 106px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 118px;
+          height: 95px;
+          bottom: 10px;
+          right: 40px;
+          @include backgroundImage(118px, 95px, "common/ico_forest.png");
+        }
+      }
+      &.type-trophy{
+        padding-bottom: 98px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 118px;
+          height: 95px;
+          bottom: 20px;
+          right: 20px;
+          @include backgroundImage(118px, 95px, "common/ico_trophy.png");
+        }
+      }
+      &.type-note{
+        padding-bottom: 86px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 118px;
+          height: 95px;
+          bottom: 10px;
+          right: 40px;
+          @include backgroundImage(118px, 95px, "common/ico_note.png");
+        }
+      }
+      &.type-tree{
+        padding-bottom: 56px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 139px;
+          height: 195px;
+          bottom: 25px;
+          right: 0px;
+          @include backgroundImage(139px, 195px, "common/ico_tree.png");
+        }
+      }
+      &.type-welcome{
+        padding-bottom: 120px;
+        &:after{
+          content: "";
+          display: inline-block;
+          position: absolute;
+          width: 213px;
+          height: 217px;
+          bottom: 0;
+          right: -5px;
+          @include backgroundImage(213px, 217px, "common/ico_welcome.png");
+        }
+      }
+    }
+    .btn-wrap{
+      padding: 0 0 30px 0;
+      margin: 0 15px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 10px;
+    }
+    .btn-kakao{
+      width: 100%;
+      text-align: center;
+      background: #FAE100;
+      font-family: "NanumSquare";
+      @include fontStyle(19px, 22px, 400, #000);
+      height:57px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 50px;
+      img{
+        height: 17px;
+      }
+    }
+    .btn-naver{
+      width: 100%;
+      text-align: center;
+      background: #2CB24A;
+      font-family: "NanumSquare";
+      @include fontStyle(19px, 22px, 400, #fff);
+      height:57px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 50px;
+      img{
+        height: 17px;
+      }
+    }
+    .popup-btn{
+      .btn-submit{
+        display: block;
+        width: calc(100% - 36px);
+        background: #FF8C75;
+        color:#000;
+        border-radius:100px;
+        font-family: "NanumSquare";
+        @include fontStyle(19px, 26.6px, 400, $gray500);
+        padding: 13px 0;
+      }
+    }
+    .popup-close{
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      .btn-close{
+        font-family: "NanumSquare";
+        @include fontStyle(14px, 19.6px, 400, #000);
+        position: relative;
+        &:after{
+          content:"";
+          position: absolute;
+          left: -17px;
+          top: 4px;
+          width: 1px;
+          height:12px;
+          background: #E5E5E5;
+        }
+      }
+      input[type=checkbox] + label{
+        vertical-align: middle;
+      }
+      .check .check-text{
+        font-family: "NanumSquare";
+        @include fontStyle(14px, 19.6px, 400, #000);
+      }
     }
   }
 
