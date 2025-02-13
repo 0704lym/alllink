@@ -82,7 +82,7 @@
       }
     }
   }
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 .sector {
   //sector-main 002 메인페이지
@@ -964,13 +964,33 @@
   img{
     height: 15px;
   }
+  em{
+    font-style: normal;
+    @include fontStyle(14px, 1, 600);
+    border-bottom: 1px solid #000;
+  }
 }
-.shop-list{
+.bubble-top{
   border: 1px solid #888888;
   border-radius: 8px;
   margin: 10px 66px;
   background: #fff;
   position: relative;
+  &.type-full{
+    margin: 10px 20px;
+
+    &:after{
+      content:"";
+      @include backgroundImage(14px, 10px, 'common/ico_top.png', contain);
+      background-position: 0 0;
+      display: inline-block;
+      width: 14px;
+      height: 10px;
+      position: absolute;
+      top: -8px;
+      left: 35%;
+    }
+  }
   &:after{
     content:"";
     @include backgroundImage(14px, 10px, 'common/ico_top.png', contain);
@@ -980,10 +1000,20 @@
     height: 10px;
     position: absolute;
     top: -8px;
-    right: 28px;
+    left: calc(50% + 60px);
   }
+}
+.msg-text{
   display: flex;
   flex-direction: column;
+  height: auto;
+  padding: 10px;
+}
+.shop-list{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow: auto;
   ul{
     display: flex;
     flex-direction: row;

@@ -61,6 +61,12 @@ body {
   &.plus-white{
     @include backgroundImage(24px, 24px, "icon/plus_white.svg");
   }
+  &.plus-red{
+    @include backgroundImage(24px, 24px, "icon/plus_red.svg");
+  }
+  &.plus-gray{
+    @include backgroundImage(24px, 24px, "icon/plus_gray.svg");
+  }
   &.settings{
     @include backgroundImage(24px, 24px, "icon/settings.svg");
   }
@@ -249,6 +255,7 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
+      align-items: flex-end;
       gap: 8px;
       border-bottom:1px dashed $gray100;
       padding-bottom: 12px;

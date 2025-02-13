@@ -275,6 +275,22 @@ body.white {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.icon.plus-red {
+  width: 24px;
+  height: 24px;
+  background-image: url("../image/icon/plus_red.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon.plus-gray {
+  width: 24px;
+  height: 24px;
+  background-image: url("../image/icon/plus_gray.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .icon.settings {
   width: 24px;
   height: 24px;
@@ -531,6 +547,7 @@ main.flex .inner .btn.bottom {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: flex-end;
   gap: 8px;
   border-bottom: 1px dashed #dcdee0;
   padding-bottom: 12px;
@@ -770,6 +787,44 @@ input[type=checkbox]:checked + label:after {
 }
 .btn.green a {
   color: #017F69;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.btn.plain-green {
+  border-color: rgba(1, 127, 105, 0.1019607843);
+}
+.btn.pause {
+  position: relative;
+  margin: 0 auto 16px;
+  width: calc(100% - 40px);
+  height: auto;
+}
+.btn.pause a {
+  background-color: rgba(226, 0, 0, 0.1019607843);
+  height: 56px;
+  border-radius: 40px;
+  color: #E20000;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.btn.gray {
+  position: relative;
+  margin: 0 auto 16px;
+  width: calc(100% - 40px);
+  height: auto;
+}
+.btn.gray a {
+  color: #ABABAB;
+  background-color: #C9C9C9;
+  height: 56px;
+  border-radius: 40px;
+  border: 1px solid #ABABAB;
   font-weight: 700;
   display: flex;
   justify-content: center;
@@ -1069,12 +1124,55 @@ button.cancel {
 }
 .bubble.green {
   width: 240px;
+  animation: none;
   width: 240px;
   height: 46px;
   background-image: url("../image//common/bubble_green.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.bubble.green-multi {
+  width: 310px;
+  height: auto;
+  background: none;
+  top: auto;
+  bottom: 30px;
+  position: relative;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%);
+  animation: none;
+}
+.bubble.green-multi:after {
+  content: "";
+  position: absolute;
+  bottom: -34px;
+  left: 50%;
+  width: 15px;
+  height: 10px;
+  background-image: url("../image//icon/bubble-bottom.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bubble.green-multi span {
+  position: relative;
+  padding: 10px 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19.09px;
+  letter-spacing: -0.32px;
+  font-weight: 400;
+  color: #fff;
+  top: auto;
+  bottom: -25px;
+  background: #017F69;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 @keyframes bounce {
@@ -1366,7 +1464,7 @@ header .inner .menu-list li.on {
 }
 
 .wood {
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 .wood .auto-box {
   margin: 0 auto;
@@ -2310,17 +2408,27 @@ header .inner .menu-list li.on {
 .msg-point img {
   height: 15px;
 }
+.msg-point em {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.28px;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 1px solid #000;
+}
 
-.shop-list {
+.bubble-top {
   border: 1px solid #888888;
   border-radius: 8px;
   margin: 10px 66px;
   background: #fff;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
-.shop-list:after {
+.bubble-top.type-full {
+  margin: 10px 20px;
+}
+.bubble-top.type-full:after {
   content: "";
   width: 14px;
   height: 10px;
@@ -2334,7 +2442,37 @@ header .inner .menu-list li.on {
   height: 10px;
   position: absolute;
   top: -8px;
-  right: 28px;
+  left: 35%;
+}
+.bubble-top:after {
+  content: "";
+  width: 14px;
+  height: 10px;
+  background-image: url("../image/common/ico_top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  position: absolute;
+  top: -8px;
+  left: calc(50% + 60px);
+}
+
+.msg-text {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+}
+
+.shop-list {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow: auto;
 }
 .shop-list ul {
   display: flex;
