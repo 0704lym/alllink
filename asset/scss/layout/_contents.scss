@@ -646,9 +646,21 @@
                 &.price {
                   @include fontStyle(16px, 22.4px, 700, $gray500);
                 }
-
+                &.price-cancel {
+                  @include fontStyle(16px, 22.4px, 700, #E20000);
+                  text-decoration: line-through;
+                }
                 &.purchase-state {
                   @include fontStyle(14px, 19.6px, 400, $gray400);
+                }
+                &.purchase-client {
+                  text-align: right;
+                  @include fontStyle(14px, 19.6px, 400, $gray400);
+                  img{
+                    display: inline-block;
+                    height: 16px;
+                    vertical-align: -3px;
+                  }
                 }
               }
             }

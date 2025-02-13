@@ -17,7 +17,9 @@ $(function () {
   function checkComplete() {
     if (checkBtn.length === checkBtn.filter(':checked').length) {
       console.log('완료')
-      $('.btn.bottom.black').css('backgroundColor', '#222');
+      $('.btn.bottom.black').css('backgroundColor', '#D1ECE2');
+      $('.btn.bottom.black a').css('color', '#000');
+      
     }
   }
 

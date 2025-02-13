@@ -742,7 +742,7 @@ input[type=checkbox]:checked + label:after {
 }
 .btn.black {
   height: 51px;
-  background-color: #888;
+  background-color: #DCDEE0;
   bottom: 16px;
 }
 .btn.type-float {
@@ -2099,12 +2099,33 @@ header .inner .menu-list li.on {
   font-weight: 700;
   color: #222;
 }
+.sector-receipt .reciept-box .receipt-item li .right .purchase-info span.price-cancel {
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: -0.32px;
+  font-weight: 700;
+  color: #E20000;
+  text-decoration: line-through;
+}
 .sector-receipt .reciept-box .receipt-item li .right .purchase-info span.purchase-state {
   font-size: 14px;
   line-height: 19.6px;
   letter-spacing: -0.28px;
   font-weight: 400;
   color: #888;
+}
+.sector-receipt .reciept-box .receipt-item li .right .purchase-info span.purchase-client {
+  text-align: right;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  font-weight: 400;
+  color: #888;
+}
+.sector-receipt .reciept-box .receipt-item li .right .purchase-info span.purchase-client img {
+  display: inline-block;
+  height: 16px;
+  vertical-align: -3px;
 }
 .sector-receipt .reciept-box .slick-arrow {
   top: -32px;
