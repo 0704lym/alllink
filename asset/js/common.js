@@ -11,6 +11,7 @@ $(function () {
   scrollEvent();
   backBtn();
   countBox();
+  bubbleBox();
 
   //체크박스 체크 여부에 따라 버튼 컬러 변경
   var checkBtn = $('.checkbox');
@@ -193,4 +194,19 @@ function countBox() {
   updateCountdown();
 }
 
+//말풍선열기
+function bubbleBox(){
+
+// 모바일 터치 이벤트 처리
+  $('.icon.tooltip').on('touchstart', function () {
+    $($(this).attr("href")).css('display', 'block');
+    return false;
+  });
+
+  $('.icon.tooltip').on('touchend', function () {
+    $($(this).attr("href")).css('display', 'none');
+    return false;
+  });
+
+}
 
