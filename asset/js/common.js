@@ -12,6 +12,7 @@ $(function () {
   backBtn();
   countBox();
   bubbleBox();
+  foldingBtn();
 
   //체크박스 체크 여부에 따라 버튼 컬러 변경
   var checkBtn = $('.checkbox');
@@ -196,17 +197,40 @@ function countBox() {
 
 //말풍선열기
 function bubbleBox(){
-
-// 모바일 터치 이벤트 처리
-  $('.icon.tooltip').on('touchstart', function () {
-    $($(this).attr("href")).css('display', 'block');
-    return false;
+  $('.icon.tooltip').on('touchstart', function (e) {
+    e.preventDefault(); // 기본 이벤트 방지
+    let target = $(this).attr("href");
+    if (target && target.startsWith("#")) {
+      $(target).css('display', 'block');
+    }
   });
 
-  $('.icon.tooltip').on('touchend', function () {
-    $($(this).attr("href")).css('display', 'none');
-    return false;
+  $(document).on('touchmove', function () {
+    $('.icon.tooltip').each(function () {
+      let target = $(this).attr("href");
+      if (target && target.startsWith("#")) {
+        $(target).css('display', 'none');
+      }
+    });
+  });
+
+  $('.icon.tooltip').on('touchend', function (e) {
+    e.preventDefault(); // 기본 이벤트 방지
   });
 
 }
 
+//약관 상세 펼침
+function foldingBtn(){
+  $('.btn-expand').on('click', function(e){
+    e.preventDefault(); // 기본 동작 방지
+    let target = $(this).attr("href"); // href 속성 값 가져오기
+    if($(this).hasClass("expand")){
+      $(this).removeClass("expand");
+      $(target).css('display', 'none');
+    } else {
+      $(target).css('display', 'block');
+      $(this).addClass("expand");   
+    }
+  });
+}
