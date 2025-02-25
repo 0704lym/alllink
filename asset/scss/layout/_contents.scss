@@ -983,10 +983,10 @@
   }
 }
 .bubble-top{
-  border: 1px solid #888888;
+  border: 1px solid $gray400;
   border-radius: 8px;
   margin: 10px 66px;
-  background: #fff;
+  background: $white;
   position: relative;
   &.type-full{
     margin: 10px 20px;
@@ -1042,7 +1042,7 @@
 .footer{
   text-align: center;
   padding: 5px 0 30px 0;
-  color:#ABABAB;
+  color:$gray300;
   font-size: 12px;
   line-height: 1.4;
   span{
