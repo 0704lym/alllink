@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>올링크 컴포넌트 가이드</title>
   <link rel="stylesheet" href="/asset/css/main.css">
   <style>
-    body{
+    body {
       width: 100%;
       max-width: 100%;
       padding: 50px;
@@ -14,7 +15,7 @@
     }
 
     .header {
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
 
     h1 {
@@ -45,23 +46,92 @@
       align-items: start;
       flex-wrap: wrap;
       gap: 10px;
-      margin-bottom: 30px;
-      
+      margin-bottom: 40px;
+
     }
+
     .item {
+      display: inline-block;
+      text-align: center;
       padding: 15px;
       border-radius: 8px;
-      border: 1px solid #f7b5b5;
+      border: 1px solid #e7e7e7;
+    }
+
+    .item .icon {
+      border: 1px solid #e7e7e7;
+    }
+
+    .color-item {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
     }
   </style>
 </head>
+
 <body>
   <div class="header">
     <h1>올링크 컴포넌트 가이드</h1>
     <span class="sub"> - 각 컴포넌트에 인라인 스타일 들어간 소스는 이 페이지전용으로만 쓰이는 것이므로 실제 페이지 작업시에는 인라인 스타일 소스는 삭제한다</span>
   </div>
-    
+
   <div class="main">
+    <div class="section">
+      <h2>Color</h2>
+      <div class="component-box">
+        <div class="item">
+          <h3>$primary</h3>
+          <span class="color-item" style="background-color: #017F69;"></span>
+        </div>
+        <div class="item">
+          <h3>$gray500</h3>
+          <span class="color-item" style="background-color: #222;"></span>
+        </div>
+        <div class="item">
+          <h3>$gray400</h3>
+          <span class="color-item" style="background-color: #888;"></span>
+        </div>
+        <div class="item">
+          <h3>$gray300</h3>
+          <span class="color-item" style="background-color: #ababab;"></span>
+        </div>
+        <div class="item">
+          <h3>$gray200</h3>
+          <span class="color-item" style="background-color: #c9c9c9;"></span>
+        </div>
+        <div class="item">
+          <h3>$gray100</h3>
+          <span class="color-item" style="background-color: #dcdee0;"></span>
+        </div>
+        <div class="item">
+          <h3>$background</h3>
+          <span class="color-item" style="background-color: #ededed;"></span>
+        </div>
+        <div class="item">
+          <h3>$white</h3>
+          <span class="color-item" style="background-color: #fff; border: 1px solid #000;"></span>
+        </div>
+        <div class="item">
+          <h3>$kakao</h3>
+          <span class="color-item" style="background-color: #ffeb00;"></span>
+        </div>
+        <div class="item">
+          <h3>$naver</h3>
+          <span class="color-item" style="background-color: #2db400;"></span>
+        </div>
+        <div class="item">
+          <h3>$warning</h3>
+          <span class="color-item" style="background-color: #E20000;"></span>
+        </div>
+
+        <div class="item">
+          <h3>$gradation</h3>
+          <span class="color-item" style="background: linear-gradient(92.75deg, #00AB50 22.61%, #006B89 78.36%);"></span>
+        </div>
+      </div>
+    </div>
     <div class="section">
       <h2>Header</h2>
       <div class="component-box">
@@ -160,7 +230,7 @@
               </ul>
             </div>
           </header>
-          <main class="fix" >
+          <main class="fix">
             <div class="inner" style="height: 500px; background-color: #ddd;">
               <div class="content">
                 contents<br>
@@ -192,45 +262,45 @@
             <div class="inner" style="background-color: #ddd;">
               <div class="content scroll-content" style=" height: 800px !important; overflow-y: scroll;">
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
                 contents<br>
-              contents<br>
-              contents<br>
-              contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
               </div>
             </div>
             <div class="btn terms black">
@@ -239,7 +309,7 @@
           </main>
         </div>
         <div class="item">
-          <h3>스크롤 하단에 버튼 있는 경우(버튼고정X, main.fix)</h3>
+          <h3>버튼없이 전체 높이를 사용하는 경우/<br>컨텐츠가 정중앙에 와야하는 경우에는 display:flex와 함께사용</h3>
           <header style="width: 360px">
             <div class="inner">
               <div class="left">title</div>
@@ -252,33 +322,121 @@
               </ul>
             </div>
           </header>
-          <main class="full" style="max-height: 500px; position: relative !important;">
-            <div class="popup kakao" style="display: block ; width:300px; left:30px !important; top:50px !important; transform: translateY(-50%) !important;">
-              <div class="popup-title">
-                <p>카카오 전자문서 전송요청 완료</p>
-              </div>
-              <div class="popup-cont">
-                <div class="lottie">
-                  <dotlottie-player src="../asset/image/icon/check.json" background="transparent"
-                  speed="1" style="width:100%; height: 131px; margin: 0 auto;" autoplay></dotlottie-player>
-                </div>
-                <span class="sub-text">
-                  ※ 추후 발급된 전자영수증은<br />카카오 전자문서로 자동전송 됩니다.
-                </span>
-              </div>
-              <div class="popup-btn">
-                <span>확인</span>
-              </div>
-            
-          </div>
-          </main>
+          <main class="full"
+            style="max-height: 500px; width: 360px; display: flex; justify-content: center; align-items: center;">
+            <div class="cont-box" style="background: #ddd; width: 300px; height: 300px;">
+              <p>content</p>
+              <p>content</p>
+              <p>content</p>
+            </div>
         </div>
+        </main>
       </div>
     </div>
+    <div class="section">
+      <div class="item">
+        <h3>left-arrow</h3>
+        <a href="" class="icon left-arrow"></a>
+      </div>
+      <div class="item">
+        <h3>right-arrow</h3>
+        <a href="" class="icon right-arrow"></a>
+      </div>
+      <div class="item">
+        <h3>bottom-arrow</h3>
+        <a href="" class="icon bottom-arrow"></a>
+      </div>
+      <div class="item">
+        <h3>bottom-arrow.on</h3>
+        <a href="" class="icon bottom-arrow.on"></a>
+      </div>
+      <div class="item">
+        <h3>more</h3>
+        <a href="" class="icon more"></a>
+      </div>
+      <div class="item">
+        <h3>download</h3>
+        <a href="" class="icon download"></a>
+      </div>
+      <div class="item">
+        <h3>download-black</h3>
+        <a href="" class="icon download-black"></a>
+      </div>
+      <div class="item">
+        <h3>plus</h3>
+        <a href="" class="icon plus"></a>
+      </div>
+      <div class="item">
+        <h3>plus-white</h3>
+        <a href="" class="icon plus-white" style="background-color: #000;"></a>
+      </div>
+      <div class="item">
+        <h3>plus-red</h3>
+        <a href="" class="icon plus-red"></a>
+      </div>
+      <div class="item">
+        <h3>plus-gray</h3>
+        <a href="" class="icon plus-gray"></a>
+      </div>
+      <div class="item">
+        <h3>settings</h3>
+        <a href="" class="icon settings"></a>
+      </div>
+      <div class="item">
+        <h3>done</h3>
+        <a href="" class="icon done"></a>
+      </div>
+      <div class="item">
+        <h3>cancel</h3>
+        <a href="" class="icon cancel"></a>
+      </div>
+      <div class="item">
+        <h3>logo</h3>
+        <a href="" class="icon logo"></a>
+      </div>
+      <div class="item">
+        <h3>close</h3>
+        <a href="" class="icon close"></a>
+      </div>
+      <div class="item">
+        <h3>shield</h3>
+        <a href="" class="icon shield"></a>
+      </div>
+      <div class="item">
+        <h3>coin</h3>
+        <a href="" class="icon coin"></a>
+      </div>
+      <div class="item">
+        <h3>gift</h3>
+        <a href="" class="icon gift"></a>
+      </div>
+      <div class="item">
+        <h3>coupon</h3>
+        <a href="" class="icon coupon"></a>
+      </div>
+      <div class="item">
+        <h3>event</h3>
+        <a href="" class="icon event"></a>
+      </div>
+      <div class="item">
+        <h3>kakao</h3>
+        <a href="" class="icon kakao"></a>
+      </div>
+      <div class="item">
+        <h3>naver</h3>
+        <a href="" class="icon naver"></a>
+      </div>
+      <div class="item">
+        <h3>tooltip</h3>
+        <a href="" class="icon tooltip"></a>
+      </div>
+    </div>
+  </div>
   </div>
 </body>
 <script src="../asset/js/lib/jquery-2.2.4.min.js" type="text/javascript"></script>
 <script src="../asset/js/lib/jquery-ui.js" type="text/javascript"></script>
 <script src="../asset/js/lib/slick.min.js" type="text/javascript"></script>
 <script src="../asset/js/common.js"></script>
+
 </html>
