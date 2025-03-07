@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>올링크 컴포넌트 가이드</title>
+  <link rel="stylesheet" href="/asset/css/main.css">
+  <style>
+    body{
+      width: 100%;
+      max-width: 100%;
+      padding: 50px;
+      background-color: #fff;
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .sub {
+      font-size: 15px;
+      color: #be2929;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    .component-box {
+      display: flex;
+      align-items: start;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+      
+    }
+    .item {
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #f7b5b5;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>올링크 컴포넌트 가이드</h1>
+    <span class="sub"> - 각 컴포넌트에 인라인 스타일 들어간 소스는 이 페이지전용으로만 쓰이는 것이므로 실제 페이지 작업시에는 인라인 스타일 소스는 삭제한다</span>
+  </div>
+    
+  <div class="main">
+    <div class="section">
+      <h2>Header</h2>
+      <div class="component-box">
+        <div class="item">
+          <h3>basic</h3>
+          <header style="width: 360px">
+            <div class="inner">
+              <div class="left">title</div>
+              <div class="right">
+                <a href="#" class="icon more"></a>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+              </ul>
+            </div>
+          </header>
+        </div>
+        <div class="item">
+          <h3>왼쪽 아이콘만 있는 헤더</h3>
+          <header style="width: 360px">
+            <div class="inner">
+              <div class="left">
+                <a href="#" class="icon left-arrow back"></a>
+              </div>
+              <div class="right"></div>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Layout</h2>
+      <div class="component-box">
+        <div class="item">
+          <h3>basic</h3>
+          <header style="width: 360px">
+            <div class="inner">
+              <div class="left">title</div>
+              <div class="right">
+                <a href="#" class="icon more"></a>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+              </ul>
+            </div>
+          </header>
+          <main style="height: 500px;">
+            <div class="inner" style="height: 500px; background-color: #ddd;">
+              <div class="content">
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+              </div>
+            </div>
+          </main>
+        </div>
+        <div class="item">
+          <h3>좌우 패딩이 없을 때(main .inner.wide)</h3>
+          <header style="width: 360px">
+            <div class="inner">
+              <div class="left">title</div>
+              <div class="right">
+                <a href="#" class="icon more"></a>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+              </ul>
+            </div>
+          </header>
+          <main style="height: 500px;">
+            <div class="inner wide" style=" background-color: #ddd;">
+              <div class="content">
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+              </div>
+            </div>
+          </main>
+        </div>
+        <div class="item">
+          <h3>스크롤 하단에 버튼 있는 경우(버튼고정X, main.fix)</h3>
+          <header style="width: 360px">
+            <div class="inner">
+              <div class="left">title</div>
+              <div class="right">
+                <a href="#" class="icon more"></a>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+              </ul>
+            </div>
+          </header>
+          <main class="fix" >
+            <div class="inner" style="height: 500px; background-color: #ddd;">
+              <div class="content">
+                contents<br>
+                contents<br>
+                contents<br>
+                contents<br>
+              </div>
+            </div>
+            <div class="btn default terms">
+              <a href="" style="width: calc(100% - 40px); margin: 0 auto;">버튼</a>
+            </div>
+          </main>
+        </div>
+        <div class="item" style="height: 675px;">
+          <h3>컨텐츠만 스크롤 되는 경우(main.fix / content.scroll-content)</h3>
+          <header style="width: 360px">
+            <div class="inner">
+              <div class="left">title</div>
+              <div class="right">
+                <a href="#" class="icon more"></a>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+              </ul>
+            </div>
+          </header>
+          <main class="flex" style="width:360px; height:  500px; position: relative;">
+            <div class="inner" style="background-color: #ddd;">
+              <div class="content scroll-content" style=" height: 800px !important; overflow-y: scroll;">
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+                contents<br>
+              contents<br>
+              contents<br>
+              contents<br>
+              </div>
+            </div>
+            <div class="btn terms black">
+              <a href="" style="width: calc(100% - 40px); margin: 0 auto;">버튼</a>
+            </div>
+          </main>
+        </div>
+        <div class="item">
+          <h3>스크롤 하단에 버튼 있는 경우(버튼고정X, main.fix)</h3>
+          <header style="width: 360px">
+            <div class="inner">
+              <div class="left">title</div>
+              <div class="right">
+                <a href="#" class="icon more"></a>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+              </ul>
+            </div>
+          </header>
+          <main class="full" style="max-height: 500px; position: relative !important;">
+            <div class="popup kakao" style="display: block ; width:300px; left:30px !important; top:50px !important; transform: translateY(-50%) !important;">
+              <div class="popup-title">
+                <p>카카오 전자문서 전송요청 완료</p>
+              </div>
+              <div class="popup-cont">
+                <div class="lottie">
+                  <dotlottie-player src="../asset/image/icon/check.json" background="transparent"
+                  speed="1" style="width:100%; height: 131px; margin: 0 auto;" autoplay></dotlottie-player>
+                </div>
+                <span class="sub-text">
+                  ※ 추후 발급된 전자영수증은<br />카카오 전자문서로 자동전송 됩니다.
+                </span>
+              </div>
+              <div class="popup-btn">
+                <span>확인</span>
+              </div>
+            
+          </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../asset/js/lib/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="../asset/js/lib/jquery-ui.js" type="text/javascript"></script>
+<script src="../asset/js/lib/slick.min.js" type="text/javascript"></script>
+<script src="../asset/js/common.js"></script>
+</html>

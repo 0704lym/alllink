@@ -114,8 +114,8 @@ body {
 
 // 페이지 높이 값
 main {
+  position: relative;
   height: calc((var(--vh, 1vh) * 100 ) - 56px);
-
 
   &.full {
     height: calc(var(--vh, 1vh) * 100);
@@ -166,6 +166,11 @@ main {
 
 .content {
   height: 100%;
+  box-sizing: border-box;
+  &.scorll-content {
+    height: calc((var(--vh, 1vh) * 100 ) - 91px) !important;
+    overflow-y: scroll;
+  }
 }
 
 //표 중간에 들아가는 라인 이미지
