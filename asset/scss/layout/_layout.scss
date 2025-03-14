@@ -1,0 +1,90 @@
+// 페이지 높이 값
+main {
+  position: relative;
+  height: calc((var(--vh, 1vh) * 100 ) - 56px);
+
+  &.full {
+    height: calc(var(--vh, 1vh) * 100);
+    padding-bottom: 16px;
+  }
+
+  &.fix {
+    height: auto;
+  }
+
+  &.flex {
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      .content {
+        height: calc((var(--vh, 1vh) * 100 ) - 250px);
+      }
+      .btn.bottom {
+        width: 100%;
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+
+// .inner 넓이 및 스타일 분기
+.inner {
+  width: calc(100% - 40px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  //.inner-wide
+  &.wide {
+    width: 100%;
+    padding: 0;
+  }
+
+  &.receipt {
+    width: calc(100% - 27px);
+    padding: 0 13.5px;
+  }
+}
+
+.content {
+  height: 100%;
+  box-sizing: border-box;
+  &.scorll-content {
+    height: calc((var(--vh, 1vh) * 100 ) - 91px) !important;
+    overflow-y: scroll;
+  }
+}
+
+//표 중간에 들아가는 라인 이미지
+.line {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px;
+  padding: 0;
+  @include backgroundImage($basic, 20px, "common/line.png", contain);
+  max-width: 480px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: $background;
+    border-radius: 50%;
+  }
+
+  &:before {
+    left: -30px;
+  }
+
+  &:after {
+    right: -30px;
+  }
+}

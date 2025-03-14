@@ -8,10 +8,9 @@
   <link rel="stylesheet" href="/asset/css/main.css">
   <style>
     body {
-      width: 100%;
-      max-width: 100%;
-      padding: 50px;
-      background-color: #fff;
+      max-width: 100% !important;
+      padding: 50px !important;
+      background-color: #fff !important;
     }
 
     .header {
@@ -32,7 +31,7 @@
     h2 {
       font-size: 20px;
       font-weight: 500;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
 
     h3 {
@@ -40,6 +39,18 @@
       margin-bottom: 10px;
       font-weight: 400;
     }
+
+    .path {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 13px;
+      color:#888;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
 
     .component-box {
       display: flex;
@@ -58,9 +69,7 @@
       border: 1px solid #e7e7e7;
     }
 
-    .item .icon {
-      border: 1px solid #e7e7e7;
-    }
+ 
 
     .color-item {
       display: inline-block;
@@ -68,6 +77,8 @@
       height: 80px;
       border-radius: 50%;
     }
+
+    
   </style>
 </head>
 
@@ -80,6 +91,7 @@
   <div class="main">
     <div class="section">
       <h2>Color</h2>
+      <span class="path">asset/scss/utils/_vars.scss</span>
       <div class="component-box">
         <div class="item">
           <h3>$primary</h3>
@@ -134,6 +146,7 @@
     </div>
     <div class="section">
       <h2>Header</h2>
+      <span class="path">asset/scss/layout/_header.scss</span>
       <div class="component-box">
         <div class="item">
           <h3>basic</h3>
@@ -165,6 +178,7 @@
     </div>
     <div class="section">
       <h2>Layout</h2>
+      <span class="path">asset/scss/layout/_layout.scss</span>
       <div class="component-box">
         <div class="item">
           <h3>basic</h3>
@@ -308,6 +322,34 @@
             </div>
           </main>
         </div>
+        <div class="item" style="height: 675px;">
+          <h3>영수증 화면(inner.reciept)</h3>
+          <header style="width: 360px">
+            <div class="inner">
+              <div class="left">title</div>
+              <div class="right">
+                <a href="#" class="icon more"></a>
+              </div>
+              <ul class="menu-list">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴1</a></li>
+              </ul>
+            </div>
+          </header>
+          <main class="flex" style="width:360px; height:  500px; position: relative;">
+            <div class="inner receipt" style="background-color: #ddd;">
+              <div class="content scroll-content" style="background-color: #222; color:white;">
+                contents<br>
+                contents<br>
+                contents<br>
+                contents
+              </div>
+            </div>
+            <div class="btn terms black">
+              <a href="" style="width: calc(100% - 40px); margin: 0 auto;">버튼</a>
+            </div>
+          </main>
+        </div>
         <div class="item">
           <h3>버튼없이 전체 높이를 사용하는 경우/<br>컨텐츠가 정중앙에 와야하는 경우에는 display:flex와 함께사용</h3>
           <header style="width: 360px">
@@ -334,6 +376,8 @@
       </div>
     </div>
     <div class="section">
+      <h2>Icon</h2>
+      <span class="path">asset/scss/components/_icons.scss</span>
       <div class="item">
         <h3>left-arrow</h3>
         <a href="" class="icon left-arrow"></a>
@@ -399,6 +443,18 @@
         <a href="" class="icon close"></a>
       </div>
       <div class="item">
+        <h3>kakao</h3>
+        <a href="" class="icon kakao"></a>
+      </div>
+      <div class="item">
+        <h3>naver</h3>
+        <a href="" class="icon naver"></a>
+      </div>
+      <div class="item">
+        <h3>tooltip</h3>
+        <a href="" class="icon tooltip"></a>
+      </div>
+      <div class="item">
         <h3>shield</h3>
         <a href="" class="icon shield"></a>
       </div>
@@ -418,17 +474,853 @@
         <h3>event</h3>
         <a href="" class="icon event"></a>
       </div>
-      <div class="item">
-        <h3>kakao</h3>
-        <a href="" class="icon kakao"></a>
+     
+    </div>
+    <div class="section">
+      <h2>Button</h2>
+      <span class="path">asset/scss/components/_buttons.scss</span>
+      <div class="component-box">
+        
+        <div class="item" style="width:340px">
+          <h3>btn review</h3>
+          <div class="point-state">
+            <!-- <a href="#none" class="btn complete"><img src="../asset/image/common/n_green.png" alt="">0,000 포인트 적립 완료</a> -->
+            <!-- <a href="#none" class="btn disable"><img src="../asset/image/common/n_white.png" alt="">리뷰완료 포인트 요청 중</a> -->
+            <a href="#none" class="btn review"><img src="../asset/image/common/n_white.png" alt="">영수증리뷰하고 0,000 포인트 받기</a>
+           </div>
+        </div>
+        <div class="item" style="width:340px">
+          <h3>point-state > btn complete</h3>
+          <div class="point-state">
+            <a href="#none" class="btn complete"><img src="../asset/image/common/n_green.png" alt="">0,000 포인트 적립 완료</a>
+            <!-- <a href="#none" class="btn disable"><img src="../asset/image/common/n_white.png" alt="">리뷰완료 포인트 요청 중</a> -->
+            <!-- <a href="#none" class="btn review"><img src="../asset/image/common/n_white.png" alt="">영수증리뷰하고 0,000 포인트 받기</a> -->
+           </div>
+        </div>
+        <div class="item" style="width:340px">
+          <h3>point-state > btn disable</h3>
+          <div class="point-state">
+            <!-- <a href="#none" class="btn complete"><img src="../asset/image/common/n_green.png" alt="">0,000 포인트 적립 완료</a> -->
+            <a href="#none" class="btn disable"><img src="../asset/image/common/n_white.png" alt="">리뷰완료 포인트 요청 중</a>
+            <!-- <a href="#none" class="btn review"><img src="../asset/image/common/n_white.png" alt="">영수증리뷰하고 0,000 포인트 받기</a> -->
+           </div>
+        </div>
+        <div class="item" style="width:360px; ">
+          <h3 style="margin-bottom:50px">point-state > plain-green.default</h3>
+          <div class="btn green plain-green default" style="display: block;">
+            <div class="bubble green">
+              <span>bubble message</span>
+            </div>
+            <a href="">
+              <span class="icon plus"></span>
+              <span>탄소중립실천포인트 <span class=point>100</span>원 적립 중</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" style="width:360px; ">
+          <h3 style="margin-bottom:50px">btn gray default</h3>
+          <div class="btn gray plain-gray default">
+            <div class="bubble green-multi">
+              <span>bubble message</span>
+              </div>
+            <a href="">
+              <span class="icon plus-gray"></span>
+              <span>탄소중립실천포인트 신청하기</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" style="width:360px; ">
+          <h3 style="margin-bottom:50px">btn pause plain-pause default</h3>
+          <div class="btn pause plain-pause default">
+            <div class="bubble green-multi">
+               <span>bubble message</span> 
+              </div>
+            <a href="">
+              <span class="icon plus-red"></span>
+              <span>탄소중립실천포인트 100원 적립 중단 중</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">하단에 텍스트 있는 경우</h3>
+          <div class="btn disable">
+            <div class="bubble black">
+              <span>가입여부 확인은 다음날 확인이 가능합니다.</span>
+            </div>
+            <a href="">
+              <span>탄소중립실천포인트 가입여부 확인 중</span>
+            </a>
+            
+          </div>
+          <span class="button-sub">가입 확인까지 시일이 소요될 수 있습니다</span>
+        </div>
+        <div class="item" style="width:360px; ">
+          <h3 style="margin-bottom:50px">btn pause plain-pause default(하단메세지 있는 타입)</h3>
+          <div class="btn gray plain-gray default">
+            <div class="bubble green-multi">
+              <span>먼저 영수증을 전자문서로 저장해주세요</span>
+              </div>
+            <a href="">
+              <span class="icon plus-gray"></span>
+              <span>탄소중립실천포인트 신청하기</span>
+            </a>
+          </div>
+          <div class="msg-point">
+            모바일 전자 영수증 발급 1건당<br/>
+            <em>탄소중립실천포인트</em>는 100원입니다.
+            
+            <div class="bubble-top type-full">
+              <div class="msg-text">
+                전자영수증 발급,무공해차 렌트 등 탄소중립을 실천하면<br />
+                현금처럼 쓸 수 있는 포인트입니다.<br />'25년 현재 연간 최대 지급액은 7만원입니다.
+            </div>
+           </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; ">
+          <h3 style="margin-bottom:50px">btn pause plain-pause default(하단 상점보기 팝업)</h3>
+          <div class="btn gray plain-gray default">
+            <div class="bubble green-multi">
+              <span>먼저 영수증을 전자문서로 저장해주세요</span>
+              </div>
+            <a href="">
+              <span class="icon plus-gray"></span>
+              <span>탄소중립실천포인트 신청하기</span>
+            </a>
+          </div>
+          <div class="msg-point">탄소중립신청포인트 적립하는 <a href="#">상점보기</a> 
+            <span><img src="../asset/image/common/ico_new.png" alt="NEW"></span></div>
+            <div class="bubble-top">
+              <div class="shop-list">
+                <ul>
+                  <li><span><img src="../asset/image/common/shop_01.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_02.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_03.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_04.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_05.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_06.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_07.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_08.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_09.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_10.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_11.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_12.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_13.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_14.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_15.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_16.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_17.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_18.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_19.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_20.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_21.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_22.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_23.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_24.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_25.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_26.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_27.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_28.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_29.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_30.png" alt=""></span></li>
+                  <li><span><img src="../asset/image/common/shop_31.png" alt=""></span></li>
+                </ul>
+                <div class="btn green green-bg btn-small">
+                  <a href="#none" class="btn-s">확인</a>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn gradation</h3>
+          <div class="btn gradation">
+            <a href="">
+              <span class="icon plus-white"></span>
+              <span>Button</span>
+            </a>
+            
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn naver</h3>
+          <div class="btn naver">
+            <a href="">
+              <span class="icon naver"></span>
+              <span>Button</span>
+            </a>
+            
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn kakao</h3>
+          <div class="btn kakao">
+            <a href="">
+              <span class="icon kakao"></span>
+              <span>Button</span>
+            </a>
+            
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn Underline</h3>
+          <div class="btn underline">
+            <a href="">
+              <span>Button</span>
+            </a>
+            
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn disable</h3>
+          <div class="btn disable">
+            <a href="">
+              <span>Button</span>
+            </a>
+            
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn pdf</h3>
+          <div class="btn pdf">
+            <a href="">
+              <span class="icon download"></span>
+              <span>PDF로 저장</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn register</h3>
+          <div class="btn register">
+            <a href="">
+              <span>Button</span>
+            </a>
+            
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn green-line</h3>
+          <div class="btn green-line">
+            <a href="">
+              <span style="color:#017F69">Button</span>
+            </a>
+            
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn green-bg</h3>
+          <div class="btn green-bg">
+            <a href="">
+              <span>Button</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn btn-small</h3>
+          <div class="btn btn-small" style="background: #017F69;">
+            <a href="">
+              <span>Button</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">btn primary</h3>
+          <div class="btn primary" style="background: #017F69;">
+            <a href="">
+              <span>Button</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">체크박스 선택 완료 및 스크롤 끝까지 됐을 때 변하는 버튼(default) </h3>
+          <div class="btn black">
+            <a href="">동의</a>
+          </div>
+        </div>
+      
       </div>
-      <div class="item">
-        <h3>naver</h3>
-        <a href="" class="icon naver"></a>
+     
+    </div>
+    <div class="section">
+      <h2>Bubble</h2>
+      <span class="path">asset/scss/components/_buttons.scss</span>
+      <div class="component-box">
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">bubble green-multi</h3>
+          <div class="bubble green" style=" position: relative; transform: none; left: 0;" >
+            <span>1~2일 후에 등록 계좌로 입금됩니다.</span>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">bubble green-multi</h3>
+          <div class="bubble green-multi">
+            <span>개인 적립 한도 7만원이 충족되었습니다.<br >
+             내년 1월1일부터 다시 적립될 예정입니다.</span> 
+           </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">bubble black</h3>
+          <div class="bubble black" style=" position: relative; transform: none; left: 0;">
+            <span>가입여부 확인은 다음날 확인이 가능합니다.</span>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <h3>tooltip</h3>
-        <a href="" class="icon tooltip"></a>
+     
+    </div>
+    <div class="section">
+      <h2>Card</h2>
+      <span class="path">asset/scss/components/_card.scss</span>
+      <div class="component-box">
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">모영숲</h3>
+          <div class="reciept-wood">
+            <div class="title">
+              <div class="wood-title">모영숲 만들기</div>
+              <a href="" class="icon tooltip"><img src="" alt=""></a>
+            </div>
+            <div class="wood-text">
+              연간 종이 영수증으로 사라지는 나무가<br>30만 그루입니다. 모바일 영수증 발급으로<br>나무를 지키고 숲을 만들어 가요.
+            </div>
+            <div class="wood-count">
+              <p>나의 모영 나무 <strong><span>0</span>그루</strong></p>
+            </div>
+            <div class="wood-state">
+              <ul>
+                <!-- 단계 활성화 시 on 클래스 추가 부탁드립니다! -->
+                <li class="seed on">
+                  <img src="/asset/image/common/seed.png" alt="">
+                </li>
+                <li class="sprout">
+                  <img src="/asset/image/common/sprout.png" alt="">
+                </li>
+                <li class="sampling">
+                  <img src="/asset/image/common/sample.png" alt="">
+                </li>
+                <li class="tree">
+                  <img src="/asset/image/common/tree.png" alt="">
+                </li>
+              </ul>
+              <p class="wood-total">
+                함께 심은 모영나무 <strong><span>00000</span>그루</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">모영숲(카운트다운)</h3>
+          <div class="reciept-wood">
+            <div class="title">
+              <div class="wood-title">모영숲 만들기</div>
+              <a href="" class="icon tooltip"><img src="" alt=""></a>
+            </div>
+            <div class="wood-text">
+              연간 종이 영수증으로 사라지는 나무가<br>30만 그루입니다. 모바일 영수증 발급으로<br>나무를 지키고 숲을 만들어 가요.
+            </div>
+            <div class="wood-count">
+              <p>나의 모영 나무 <strong><span>0</span>그루</strong> <div class="btn register"><a href="#">모영클럽 가입</a></div></p>
+            </div>
+            <div class="wood-state">
+              <ul>
+                <!-- 단계 활성화 시 on 클래스 추가 부탁드립니다! -->
+                <li class="seed on">
+                  <img src="/asset/image/common/seed.png" alt="">
+                </li>
+                <li class="sprout on">
+                  <img src="/asset/image/common/sprout.png" alt="">
+                </li>
+                <li class="sampling on">
+                  <img src="/asset/image/common/sample.png" alt="">
+                </li>
+                <li class="tree on">
+                  <img src="/asset/image/common/tree.png" alt="">
+                </li>
+                <div class="wood-countdown">
+                  <p id="count"></p>
+                </div>
+              </ul>
+             
+              <p class="wood-total">
+                함께 심은 모영나무 <strong><span>00000</span>그루</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">모영숲(모영클럽 가입 큰 버튼)</h3>
+          <div class="reciept-wood">
+            <div class="title">
+              <div class="wood-title">모영숲 만들기</div>
+              <a href="#tooltip-msg-tree" class="icon tooltip"><img src="" alt=""></a>
+            </div>
+            <div class="wood-text" id="tooltip-msg-tree" style="display: none;">
+              연간 종이 영수증으로 사라지는 나무가<br>30만 그루입니다. 모바일 영수증 발급으로<br>나무를 지키고 숲을 만들어 가요.
+            </div>
+            <div class="wood-count">
+              함께 심은 모영나무 <strong><span>00000</span>그루</strong>
+            </div>
+            <div class="wood-state">
+              <ul>
+                <!-- 3차 : 단계 활성화 시 파일명뒤에 _on 추가됩니다! -->
+                <li class="seed on">
+                  <img src="../asset/image/common/seed_on.png" alt="">
+                </li>
+                <li class="sprout on">
+                  <img src="../asset/image/common/sprout_on.png" alt="">
+                </li>
+                <li class="sampling on">
+                  <img src="../asset/image/common/sample_on.png" alt="">
+                </li>
+                <li class="tree on">
+                  <a href="#none"><img src="../asset/image/common/tree_on.png" alt=""></a>
+                </li>
+              </ul>
+              <!-- 3차 : 클럽가입 전 상태(0그루 일때) -->
+              <div class="club_unstart">
+                <p class="wood-total">
+                  나의 모영 나무 <strong><span>0</span>그루</strong>
+                </p>
+                <div class="wood-btn">
+                  <a href="#none" class="btn"><img src="../asset/image/common/logo_club.png" alt="">모영클럽 가입</a>
+                </div>
+              </div>
+              <!-- 3차 : 클럽가입 후(1그루 이상일때) -->
+              <div class="club_start" style="display: none;">
+                <p class="wood-total">
+                  나의 모영 나무 <strong><span>1</span>그루</strong>
+                </p>
+                <div class="wood-btn">
+                  <a href="#none" class="btn"><img src="../asset/image/common/logo_club.png" alt="">MY 모영클럽</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">모영숲(모영클럽 가입 작은 버튼)</h3>
+          <div class="reciept-wood">
+            <div class="title">
+              <div class="wood-title">모영숲 만들기</div>
+              <a href="" class="icon tooltip"><img src="" alt=""></a>
+            </div>
+            <div class="wood-text">
+              연간 종이 영수증으로 사라지는 나무가<br>30만 그루입니다. 모바일 영수증 발급으로<br>나무를 지키고 숲을 만들어 가요.
+            </div>
+            <div class="wood-count">
+              <p>나의 모영 나무 <strong><span>0</span>그루</strong> <div class="btn register"><a href="#">모영클럽 가입</a></div></p>
+            </div>
+            <div class="wood-state">
+              <ul>
+                <!-- 단계 활성화 시 on 클래스 추가 부탁드립니다! -->
+                <li class="seed on">
+                  <img src="/asset/image/common/seed.png" alt="">
+                </li>
+                <li class="sprout on">
+                  <img src="/asset/image/common/sprout.png" alt="">
+                </li>
+                <li class="sampling on">
+                  <img src="/asset/image/common/sample.png" alt="">
+                </li>
+                <li class="tree on">
+                  <img src="/asset/image/common/tree.png" alt="">
+                </li>
+                <div class="wood-countdown">
+                  <p id="count"></p>
+                </div>
+              </ul>
+             
+              <p class="wood-total">
+                함께 심은 모영나무 <strong><span>00000</span>그루</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3 style="margin-bottom:50px">모영숲(모영클럽 가입 작은 버튼)</h3>
+          <div class="auto-box">
+            <div class="default">
+              <div class="title-area">
+                <span class="title">자동저장 설정 변경</span>
+                <button><span class="icon bottom-arrow change"></span></button>
+              </div>
+            </div>
+            <div class="setting-area">
+              <div class="naver-btn">
+                <div class="btn naver">
+                  <!-- 네이버 저장 설정 전 -->
+                  <a href="#">
+                    <span class="icon download"></span>
+                    <span>네이버 전자문서로 저장</span>
+                  </a>
+                </div>
+                <!-- 네이버 저장 설정 후 -->
+                <div class="naver ing">
+                  <span>네이버 전자문서로 자동저장 중</span
+                  ><button class="cancel">해지</button>
+                </div>
+              </div>
+              <div class="kakao-btn">
+                <!-- 카카오 저장 설정 전 -->
+                <div class="btn kakao">
+                  <a href="#">
+                    <span class="icon download-black"></span>
+                    <span>카카오 전자문서로 저장</span>
+                  </a>
+                </div>
+                <!-- 카카오 저장 설정 후 -->
+                <div class="kakao ing">
+                  <span>카카오 전자문서로 자동저장 중</span
+                  ><button class="cancel">해지</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <div class="section">
+      <h2>Form</h2>
+      <span class="path">asset/scss/layout/_form.scss</span>
+      <div class="component-box">
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <div class="agree-box">
+            <div class="input-box">
+              <div class="check">
+                <input type="checkbox" name="" id="all" class="checkbox"/>
+                <label for="all"></label>
+                <span class="check-text">전체 약관에 동의합니다.</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="input-box">
+              <div class="check">
+                <input type="checkbox" name="" id="check_1" class="checkbox"/>
+                <label for="check_1"></label>
+                <span class="check-text">[필수] 서비스 이용 약관</span><a href="#term1" class="btn-expand "><img src="../asset/image/common/ico_arrow.png" alt=""></a>
+              </div>
+              <div class="agree-textarea" id="term1" style="display: none;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptas, iste perspiciatis alias sapiente repudiandae accusantium. Laborum asperiores provident voluptates, consequuntur minus a sit qui culpa quibusdam labore maiores nobis!
+              </div>
+
+              <div class="check">
+                <input type="checkbox" name="" id="check_2" class="checkbox"/>
+                <label for="check_2"></label>
+                <span class="check-text">[필수] 개인정보 수집 및 이용</span><a href="#term2" class="btn-expand "><img src="../asset/image/common/ico_arrow.png" alt=""></a>
+              </div>
+              <div class="agree-textarea" id="term2" style="display: none;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptas, iste perspiciatis alias sapiente repudiandae accusantium. Laborum asperiores provident voluptates, consequuntur minus a sit qui culpa quibusdam labore maiores nobis!
+              </div>
+
+              <div class="check">
+                <input type="checkbox" name="" id="check_3" class="checkbox"/>
+                <label for="check_3"></label>
+                <span class="check-text">[필수] 14세 이상입니다</span><a href="#term3" class="btn-expand "><img src="../asset/image/common/ico_arrow.png" alt=""></a>
+              </div>
+              <div class="agree-textarea" id="term3" style="display: none;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptas, iste perspiciatis alias sapiente repudiandae accusantium. Laborum asperiores provident voluptates, consequuntur minus a sit qui culpa quibusdam labore maiores nobis!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; ">
+          <h3>toggle</h3>
+          <div class="toggle">
+            <label>
+              <input role="switch" type="checkbox" />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Popup</h2>
+      <span class="path">asset/scss/layout/_popup.scss</span>
+      <div class="component-box">
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>완료 (popup-1) 팝업</h3>
+          <div class="popup complete" style="display: block !important; position: relative; top:0 !important; left:0 !important;">
+            <div class="popup-title">모바일 전자영수증 발급 완료</div>
+            <div class="popup-cont ">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                모바일 전자 영수증이 <br />
+                <img class="app" src="../asset/image/common/logo.png" alt="">앱으로<br />
+                발송되었습니다.
+              </span>
+              
+             </div>
+             <a href="#none" class="btn-go"> <img class="app" src="../asset/image/common/logo.png" alt="">앱에서 확인하기</a>
+           
+            <div class="popup-close">
+              <a href="#none" class="btn-close">닫기</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;"">
+          <h3>완료 (popup-2) 팝업</h3>
+          <div class="popup complete"style="display: block !important; position: relative; top:0 !important; left:0 !important;">
+            <div class="popup-title">모바일 전자영수증 발급 완료</div>
+            <div class="popup-cont type-public">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                공인전자문서제도기반<br />
+                "모바일 전자영수증"이 <br />
+                발급되었습니다.<br /><br />
+                영수증의 안전한 보관과 사용을 위해<br />
+                공인 전자문서 중계자의 전자문서로 <br />저장하세요.
+              </span>        
+             </div>
+            <div class="btn-wrap">
+              <a href="#none" class="btn-kakao"><img src="../asset/image/icon/kakao_text.svg" alt="kakao">전자문서로 저장</a>
+              <a href="#none" class="btn-naver"><img src="../asset/image/icon/naver_text.svg" alt="NAVER">전자문서로 저장</a>
+           
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>완료 (popup-3) 팝업</h3>
+          <div class="popup complete" style="display: block; position: relative;">
+            <div class="popup-title">전자문서 저장 완료</div>
+            <div class="popup-cont type-won">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                연간 최대 7만원의<br />
+                탄소중립실천포인트를 받으세요.<br />
+                <em>(영수증 건당 100원 적립)</em>
+              </span>        
+             </div>
+             <a href="#none" class="btn-go">포인트 신청하러 가기</a>
+           
+             <div class="popup-close">
+              <a href="#none" class="btn-close">닫기</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>완료 (popup-4) 팝업</h3>
+          <div class="popup complete" style="display: block; position: relative;">
+            <div class="popup-title">전자문서 저장 완료</div>
+            <div class="popup-cont type-review">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                네이버 영수증 리뷰쓰고<br />리워드 받으세요
+      
+              </span>        
+             </div>
+             <a href="#none" class="btn-go">리뷰쓰러 가기</a>
+             <a href="#none" class="btn-review">나중에 몰아서 쓰기</a>
+           
+             <div class="popup-close">
+              <a href="#none" class="btn-close">닫기</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>완료 (popup-5) 팝업</h3>
+          <div class="popup complete" style="display: block; position: relative;">
+            <div class="popup-title">전자문서 저장 완료</div>
+            <div class="popup-cont type-thanku">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                모바일 영수증으로<br />
+                숲을 지키시는 고객님께<br />
+                감사드립니다.
+              </span>        
+             </div>
+             <a href="#none" class="btn-go">확인</a>
+           
+             <div class="popup-close">
+              <a href="#none" class="btn-close">닫기</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>완료 (popup-6) 팝업</h3>
+          <div class="popup complete" style="display: block; position: relative;">
+            <div class="popup-title">전자문서 저장 완료</div>
+            <div class="popup-cont type-trophy">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                모영클럽에 가입하세요.<br />
+                모영나무를 심은 당신께<br />
+                작은 혜택을 드립니다.
+              </span>        
+             </div>
+             <a href="#none" class="btn-go">가입하러 가기</a>
+           
+             <div class="popup-close">
+              <a href="#none" class="btn-close">닫기</a>
+              <div class="check">
+                <input type="checkbox" name="" id="today" class="checkbox"/>
+                <label for="today"></label>
+                <span class="check-text">다시보지 않기</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>포인트 적립안내 팝업</h3>
+          <div class="popup complete" style="display: block; position: relative;">
+            <div class="popup-title">탄소중립실천포인트 적립 안내</div>
+            <div class="popup-cont ">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                탄소중립실천포인트 적립을 <br />
+                위해서는 ‘탄소중립실천포인트’ <br />
+                홈페이지 회원이셔야 합니다.<br /><br />
+              </span>  
+      
+              <a href="#none" class="btn-go">회원입니다.</a>
+              <a href="#none" class="btn-go">회원이 아닙니다.</a>
+              <a href="#none" class="btn-go">회원가입 하러 가기</a>   
+             </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>포인트 회원가입 안내 팝업</h3>
+          <div class="popup complete" style="display: block; position: relative;">
+            <div class="popup-title h2">탄소중립실천포인트 회원가입 안내</div>
+            <div class="popup-cont ">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                탄소중립실천포인트 적립을 <br />
+                위해서는 ‘탄소중립실천포인트’ <br />
+                홈페이지 회원이셔야 합니다.<br />
+              </span>  
+             </div>
+             <a href="#none" class="btn-go">가입하러 가기</a>   
+             <div class="popup-close">
+              <a href="#none" class="btn-close">닫기</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>설정완료 (카카오,네이버 문구만 다르게) 팝업</h3>
+          <div class="popup complete" style="display: block; position: relative;">
+            <div class="popup-title h2">카카오 전자문서 자동저장 설정 완료</div>
+            <div class="popup-cont type-note">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                이제부터 전자 영수증은<br />
+                카카오 전자문서로<br />
+                자동저장 됩니다.
+              </span>  
+             </div>
+             
+             <div class="popup-close">
+              <a href="#none" class="btn-close">닫기</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>모영나무 심기 완료</h3>
+          <div class="popup complete" style="display: block; position: relative;">
+            <div class="popup-title">모영나무 심기 완료</div>
+            <div class="popup-cont type-tree">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                모영숲에 모영나무<br />1그루를 심으셨습니다.<br />감사합니다.<br /><br />
+                모영나무를 심은<br />당신을 위한 작은 혜택<br />모영클럽에 가입하세요.
+              </span>  
+             </div>
+             
+             <a href="#none" class="btn-go">포인트 신청하러 가기</a>
+             <div class="popup-close">
+              <a href="#none" class="btn-close">닫기</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>액션완료팝업_모영클럽가입</h3>
+          <div class="popup complete" style="display: block; position: relative;">
+            <div class="popup-title">모영나무 가입 완료</div>
+            <div class="popup-cont type-welcome">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                모영클럽에 가입하신 것을<br />환영합니다.<br /><br />
+                작은 혜택으로<br />자주 찾아뵙겠습니다.
+              </span>  
+             </div>
+             
+             <div class="popup-close">
+              <a href="#none" class="btn-close">닫기</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>확인 버튼만 있을 때 에러 팝업</h3>
+          <div class="popup error" style="display: block; position: relative;">
+            <div class="popup-title">에러메세지</div>
+            <div class="popup-cont type-alert">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                영수증 데이터가 없습니다.<br />
+                영수증 발급 재요청하시고,<br />
+                휴대폰을 태그에 다시 터치해 주세요
+              </span>
+              <!-- 
+              <span class="sub-text">
+                네트워크 상태가 좋지 않습니다.<br />
+                네트워크 확인 후<br />
+                휴대폰을 태그에 다시 터치해 주세요.
+              </span> 
+              -->
+              <!-- 
+              <span class="sub-text">
+                영수증 수신에 실패하였습니다. <br />
+                종이영수증으로<br />발급 요청해 주세요.
+              </span> 
+              -->
+              <!-- 
+              <span class="sub-text">
+                전자문서 자동 저장이 지연되고 있습니다. <br />
+                계속 자동저장 요청중이오니 <br />
+                잠시후에 전자문서함에서 확인하세요.
+              </span> 
+              -->
+              <!-- 
+              <span class="sub-text">
+                개인정보 활용 동의 또는 제3자 정보 제공 동의를 체크하지 않으셨습니다.
+              </span> 
+              -->
+            </div>
+            <div class="popup-btn">
+              <a href="#none" class="btn-submit">확인</a>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>시스템 팝업 - 버튼 하나</h3>
+          <div class="popup one-btn" style="display: block; position: relative;">
+            <div class="popup-cont">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                alertalertalertalertalert<br>
+                alertalertalertalertalert<br>
+                alertalertalert
+              </span>
+            </div>
+            <div class="popup-btn">
+              <span>확인</span>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="width:360px; position: relative; background-color: #ededed;">
+          <h3>시스템 팝업 - 버튼 두개</h3>
+          <div class="popup two-btn" style="display: block; position: relative;">
+            <div class="popup-cont">
+              <a href="#" class="icon close"></a>
+              <span class="sub-text">
+                alertalertalertalertalert<br>
+                alertalertalertalertalert<br>
+                alertalertalert
+              </span>
+            </div>
+            <div class="popup-btn group">
+              <span>취소</span>
+              <span>확인</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -438,5 +1330,14 @@
 <script src="../asset/js/lib/jquery-ui.js" type="text/javascript"></script>
 <script src="../asset/js/lib/slick.min.js" type="text/javascript"></script>
 <script src="../asset/js/common.js"></script>
+<script>
+  $(function(){
+    $('.popup').css({
+    "top":  "0px",
+    "left":  "0px",
+  });
+
+  })
+</script>
 
 </html>

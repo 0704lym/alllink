@@ -5,8 +5,12 @@
 @import 'config/_reset';
 @import 'config/_common';
 
-@import 'components/_interact';
+@import 'components/_buttons';
+@import 'components/_card';
+@import 'components/_form';
+@import 'components/_icons';
 @import './components/_popup';
 
 @import 'layout/_header';
+@import 'layout/_layout';
 @import 'layout/_contents';

@@ -90,7 +90,8 @@
    // 로그아웃, 서비스 탈퇴 시 팝업
   &.logout,
   &.signout,
-  &.one-btn {
+  &.one-btn,
+  &.two-btn {
     padding-top: 12px;
     .popup-cont {
       padding-top: 0;

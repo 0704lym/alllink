@@ -1,0 +1,257 @@
+// 모영숲
+.reciept-wood {
+  margin: 20px 20px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px 0;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    .wood-title {
+      @include fontStyle(24px,33.6px, 700, #222);
+    }
+    .icon.tootip {
+      width: 37px;
+      height: 37px;
+      box-sizing: border-box;
+      padding: 5.67px;
+    }
+  }
+  .wood-text {
+    margin: 0 auto;
+    padding: 16px 0 0 0;
+    @include fontStyle(16px, 22.4px, 400, #fff);
+    margin-bottom: 8px;
+    width: 288px;
+    height: 90px;
+    box-sizing: border-box;
+    @include backgroundImage(288px, 90px, 'common/bg_wood.png', contain);
+    background-position: center;
+  }
+  .wood-count {
+    width: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto 8px;
+    border-radius: 16px;
+    background-color: $white;
+    padding: 8px 0;
+    @include fontStyle(16px, 22.4px, 400,#222);
+    strong {
+      font-weight: 700;
+    }
+  }
+  
+  .wood-state {
+    width: 100%;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    background-color: $white;
+    ul {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 8px;
+      border-bottom:1px dashed $gray100;
+      padding-bottom: 12px;
+      li {
+        width: 57px;
+        &:last-child {
+          width: 85px;
+          margin-left: 15px;
+        }
+        img {
+          opacity: .3;
+          width: 100%;
+        }
+
+        &.on {
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      .wood-countdown {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+        width: 112%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+         
+    p {
+      color:$white;
+      @include fontStyle(24px, 33.6px, 700, $white);
+    }
+      }
+    }
+
+    .wood-total {
+      margin-top: 12px;
+      @include fontStyle(16px, 22.4px, 400,#222);
+      strong {
+        font-weight: 700;
+      }
+    }
+    .wood-btn{
+      margin: 15px 0 5px 0;
+      a{
+        background: #D1ECE2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        img{
+          height: 34px;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  .club_unstart{
+    display: flex;
+    flex-direction: column;
+  }
+  .club_start{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+    .wood-total {
+      margin-top: 12px;
+      @include fontStyle(16px, 22.4px, 400,#222);
+      strong {
+        font-weight: 700;
+      }
+    }
+    .wood-btn{
+      margin: 15px 0 5px 0;
+      a{
+        background: #D1ECE2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        height: 36px;
+        padding: 0 6px 0 2px;
+        img{
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+//자동 설정 영역
+.auto-box {
+  overflow: hidden;
+  border-radius: 8px;
+  .title-area {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .default {
+    padding: 18.5px 0;
+    margin-bottom: 10px;;
+   border-bottom: 1px solid #eee;
+    .state-area {
+      span {
+        display: none;
+        align-items: center;
+        gap: 8px;
+        padding: 7.5px 0 7.5px 16px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        @include fontStyle(16px, 19.09px, 400);
+
+        &.naver {
+          margin-top: 12px;
+          color: $white;
+        }
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          @include backgroundImage(20px, 20px, "/icon/check.svg");
+        }
+
+        &.naver {
+          &:before {
+            @include backgroundImage(20px, 20px, "/icon/check_white.svg");
+          }
+        }
+      }
+    }
+  }
+
+  // 자동저장 설정버튼
+  .setting-area {
+    display: none;
+    padding: 6px 0;
+    >div {
+      padding-top: 16px;
+      margin-bottom: 12px;
+      &:last-child {
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-top: 12px;
+      }
+    }
+    .ing {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background-color: transparent;
+      margin-bottom: 12px;
+      @include fontStyle(16px, 19.09px, 700, $gray500);
+      padding: 16px 0;
+      
+      span {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          @include backgroundImage(24px, 24px, "/icon/naver.svg");
+        }
+      }
+
+      &.kakao {
+
+        border-top: 1px solid $gray100;
+        margin-bottom: 0;
+        span {
+          &:before{
+            @include backgroundImage(24px, 24px, "/icon/kakao.svg");
+          }
+        }
+      }
+      
+    }
+
+    &.on {
+      display: block;
+    }
+  }
+}

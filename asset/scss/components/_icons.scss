@@ -1,0 +1,79 @@
+//아이콘들
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  &.left-arrow {
+    @include backgroundImage(24px, 24px, "icon/chevron_left.svg");
+  }
+  &.right-arrow {
+    @include backgroundImage(24px, 24px, "icon/chevron_left.svg");
+    transform: rotate(-180deg)
+  }
+  &.bottom-arrow {
+    @include backgroundImage(24px, 24px, "icon/bottom_arrow.svg");
+  }
+  &.bottom-arrow.on {
+    transform: rotate(-180deg);
+  }
+  &.more {
+    @include backgroundImage(24px, 24px, "icon/more.svg");
+  }
+  &.download{
+    @include backgroundImage(24px, 24px, "icon/download.svg");
+  }
+  &.download-black{
+    @include backgroundImage(24px, 24px, "icon/download_black.svg");
+  }
+  &.plus{
+    @include backgroundImage(24px, 24px, "icon/plus.svg");
+  }
+  &.plus-white{
+    @include backgroundImage(24px, 24px, "icon/plus_white.svg");
+  }
+  &.plus-red{
+    @include backgroundImage(24px, 24px, "icon/plus_red.svg");
+  }
+  &.plus-gray{
+    @include backgroundImage(24px, 24px, "icon/plus_gray.svg");
+  }
+  &.settings{
+    @include backgroundImage(24px, 24px, "icon/settings.svg");
+  }
+  &.done{
+    @include backgroundImage(24px, 24px, "icon/done.svg");
+  }
+  &.cancel{
+    @include backgroundImage(24px, 24px, "icon/cancel.svg");
+  }
+  &.logo{
+    @include backgroundImage(24px, 24px, "icon/logo.svg");
+  }
+  &.close {
+    @include backgroundImage(24px, 24px, "icon/close.svg");
+  }
+  &.shield {
+    @include backgroundImage(56px, 53px, "icon/shield.svg");
+  }
+  &.coin {
+    @include backgroundImage(56px, 53px, "icon/coin.svg");
+  }
+  &.gift {
+    @include backgroundImage(59px, 54.66px, "icon/gift.svg");
+  }
+  &.coupon {
+    @include backgroundImage(59px, 50px, "icon/coupon.svg");
+  }
+  &.event {
+    @include backgroundImage(59px, 50px, "icon/event.svg");
+  }
+  &.kakao {
+    @include backgroundImage(25px, 25px, "icon/kakao.svg");
+  }
+  &.naver {
+    @include backgroundImage(25px, 25px, "icon/naver.svg");
+  }
+  &.tooltip {
+    @include backgroundImage(22.67px, 22.67px, "icon/tool_tip.png");
+  }
+}
