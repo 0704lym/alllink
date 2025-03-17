@@ -560,7 +560,6 @@ button.cancel {
 }
 .bubble.green {
   width: 240px;
-  animation: none;
   width: 240px;
   height: 46px;
   background-image: url("../image//common/bubble_green.png");
@@ -578,7 +577,6 @@ button.cancel {
   left: 50%;
   margin: 0;
   transform: translateX(-50%);
-  animation: none;
 }
 .bubble.green-multi:after {
   content: "";

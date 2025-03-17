@@ -348,7 +348,6 @@ button {
   }
   &.green {
     width: 240px;
-    animation: none;
     @include backgroundImage(240px, 46px, "/common/bubble_green.png");
   }
   &.green-multi {
@@ -361,7 +360,6 @@ button {
     left: 50%;
     margin: 0;
     transform: translateX(-50%);
-    animation: none;
     &:after{
       content:"";
       position: absolute;
