@@ -1917,80 +1917,87 @@ main.flex .inner .btn.bottom {
   display: block;
 }
 
-.sector-agree .title {
+.sector-login {
+  padding-top: 125px;
+}
+.sector-login .title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.sector-login .title p {
   display: flex;
   align-items: center;
-  height: 200px;
+  justify-content: center;
   font-size: 28px;
   line-height: 39.2px;
   letter-spacing: -0.56px;
-  font-weight: 400;
+  font-weight: 700;
   color: #222;
-  letter-spacing: -0.28px;
-  margin-bottom: 36px;
+  margin-bottom: 27px;
 }
-.sector-agree .agree-box {
+.sector-login .title p .icon.logo {
+  width: 48px;
+  height: 45px;
+  margin-right: 4px;
+}
+.sector-login .title .sub-text {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  font-weight: 500;
+  color: #222;
+}
+.sector-login .login-box {
   width: 100%;
   background-color: #fff;
   border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 80px;
+  padding: 48px 16px;
+  text-align: center;
   box-sizing: border-box;
-  display: inline-block;
 }
-.sector-agree .agree-box .input-box {
-  position: relative;
-  width: 100%;
+.sector-login .login-box .icon-box {
+  padding-bottom: 16px;
 }
-.sector-agree .agree-box .input-box .check {
+.sector-login .login-box .icon-box .login-cont {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
-  padding: 12px 8px;
-  box-sizing: border-box;
+  gap: 16px;
+  margin-bottom: 18px;
 }
-.sector-agree .agree-box .input-box .check .check-text {
+.sector-login .login-box .icon-box .login-cont a {
+  display: inline-block;
+  padding: 7.5px;
+  border-radius: 4px;
+}
+.sector-login .login-box .icon-box .continue a {
   font-size: 16px;
   line-height: 19.09px;
   letter-spacing: -0.32px;
   font-weight: 400;
-  color: #1b1b1b;
-  letter-spacing: -0.16px;
+  color: #222;
+  text-decoration: underline;
 }
-.sector-agree .agree-box .input-box .check img {
-  width: 17px;
-  height: 17px;
-}
-.sector-agree .agree-box .input-box .agree-textarea {
-  border: 1px solid #888888;
-  background: #fff;
-  border-radius: 8px;
-  padding: 6px 12px;
-  overflow: auto;
-  height: 52px;
-  font-size: 12px;
-  line-height: 1.4;
-  margin: 0 12px;
-}
-.sector-agree .agree-box .line {
+.sector-login .login-box .line {
   width: 100%;
   margin: 0;
 }
-.sector-agree .agree-box .line:before {
+.sector-login .login-box .line:before {
   left: -25px;
 }
-.sector-agree .agree-box .line:after {
+.sector-login .login-box .line:after {
   right: -25px;
 }
-.sector-agree .btn {
-  bottom: 16px;
+.sector-login .terms-box {
+  padding-top: 16px;
 }
-
-.sector-agree + .btn.bottom {
-  position: fixed !important;
-  bottom: 24px;
-  top: auto;
-  left: 50% !important;
-  transform: translateX(-50%);
-  width: calc(100% - 40px) !important;
+.sector-login .terms-box p {
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  font-weight: 400;
+  color: #888;
+}
+.sector-login .terms-box p a {
+  text-decoration: underline;
 }

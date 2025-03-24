@@ -1917,80 +1917,55 @@ main.flex .inner .btn.bottom {
   display: block;
 }
 
-.sector-agree .title {
+.sector-benefit .main-title {
   display: flex;
   align-items: center;
-  height: 200px;
-  font-size: 28px;
-  line-height: 39.2px;
-  letter-spacing: -0.56px;
-  font-weight: 400;
+  gap: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
   color: #222;
-  letter-spacing: -0.28px;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
-.sector-agree .agree-box {
-  width: 100%;
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 80px;
+.sector-benefit .main-title .icon.tooltip {
+  width: 16px;
+  height: 16px;
+  padding: 4px;
   box-sizing: border-box;
-  display: inline-block;
 }
-.sector-agree .agree-box .input-box {
-  position: relative;
-  width: 100%;
+.sector-benefit ul li {
+  margin-bottom: 24px;
 }
-.sector-agree .agree-box .input-box .check {
+.sector-benefit ul li .title {
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: -0.36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+.sector-benefit ul li .cont-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px 9px;
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 8px;
-  box-sizing: border-box;
-}
-.sector-agree .agree-box .input-box .check .check-text {
-  font-size: 16px;
-  line-height: 19.09px;
-  letter-spacing: -0.32px;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
   font-weight: 400;
-  color: #1b1b1b;
-  letter-spacing: -0.16px;
+  color: calc(100% - 40px);
 }
-.sector-agree .agree-box .input-box .check img {
-  width: 17px;
-  height: 17px;
+.sector-benefit .agree-box .check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
 }
-.sector-agree .agree-box .input-box .agree-textarea {
-  border: 1px solid #888888;
-  background: #fff;
-  border-radius: 8px;
-  padding: 6px 12px;
-  overflow: auto;
-  height: 52px;
-  font-size: 12px;
-  line-height: 1.4;
-  margin: 0 12px;
-}
-.sector-agree .agree-box .line {
-  width: 100%;
-  margin: 0;
-}
-.sector-agree .agree-box .line:before {
-  left: -25px;
-}
-.sector-agree .agree-box .line:after {
-  right: -25px;
-}
-.sector-agree .btn {
-  bottom: 16px;
-}
-
-.sector-agree + .btn.bottom {
-  position: fixed !important;
-  bottom: 24px;
-  top: auto;
-  left: 50% !important;
-  transform: translateX(-50%);
-  width: calc(100% - 40px) !important;
+.sector-benefit .btn-group {
+  position: absolute;
+  width: calc(100% - 40px);
+  bottom: 0;
 }

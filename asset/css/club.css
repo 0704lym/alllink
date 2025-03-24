@@ -1917,39 +1917,71 @@ main.flex .inner .btn.bottom {
   display: block;
 }
 
-.sector-agree .title {
+.sector-club .title {
   display: flex;
-  align-items: center;
-  height: 200px;
-  font-size: 28px;
-  line-height: 39.2px;
-  letter-spacing: -0.56px;
-  font-weight: 400;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  font-weight: 600;
   color: #222;
   letter-spacing: -0.28px;
-  margin-bottom: 36px;
 }
-.sector-agree .agree-box {
+.sector-club .title img {
+  width: 95px;
+  margin-bottom: 10px;
+}
+.sector-club .benefit {
+  margin-top: 24px;
+}
+.sector-club .benefit p {
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: -0.36px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 6px;
+}
+.sector-club .benefit .benefit-box {
+  background: #EDEEEF;
+  border-radius: 8px;
+  padding: 10px 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 14px;
+}
+.sector-club .benefit .benefit-box img {
+  height: 41px;
+}
+.sector-club .benefit .benefit-box span {
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  font-weight: 400;
+  color: #222;
+}
+.sector-club .agree-box {
   width: 100%;
   background-color: #fff;
   border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 80px;
+  padding: 16px 0;
   box-sizing: border-box;
-  display: inline-block;
 }
-.sector-agree .agree-box .input-box {
+.sector-club .agree-box .input-box {
   position: relative;
   width: 100%;
 }
-.sector-agree .agree-box .input-box .check {
+.sector-club .agree-box .input-box .check {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 8px;
+  padding: 6px 0;
   box-sizing: border-box;
 }
-.sector-agree .agree-box .input-box .check .check-text {
+.sector-club .agree-box .input-box .check .check-text {
   font-size: 16px;
   line-height: 19.09px;
   letter-spacing: -0.32px;
@@ -1957,11 +1989,11 @@ main.flex .inner .btn.bottom {
   color: #1b1b1b;
   letter-spacing: -0.16px;
 }
-.sector-agree .agree-box .input-box .check img {
+.sector-club .agree-box .input-box a img {
   width: 17px;
   height: 17px;
 }
-.sector-agree .agree-box .input-box .agree-textarea {
+.sector-club .agree-box .input-box .agree-textarea {
   border: 1px solid #888888;
   background: #fff;
   border-radius: 8px;
@@ -1970,27 +2002,4 @@ main.flex .inner .btn.bottom {
   height: 52px;
   font-size: 12px;
   line-height: 1.4;
-  margin: 0 12px;
-}
-.sector-agree .agree-box .line {
-  width: 100%;
-  margin: 0;
-}
-.sector-agree .agree-box .line:before {
-  left: -25px;
-}
-.sector-agree .agree-box .line:after {
-  right: -25px;
-}
-.sector-agree .btn {
-  bottom: 16px;
-}
-
-.sector-agree + .btn.bottom {
-  position: fixed !important;
-  bottom: 24px;
-  top: auto;
-  left: 50% !important;
-  transform: translateX(-50%);
-  width: calc(100% - 40px) !important;
 }

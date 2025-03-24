@@ -1917,80 +1917,100 @@ main.flex .inner .btn.bottom {
   display: block;
 }
 
-.sector-agree .title {
+.sector-setting {
   display: flex;
-  align-items: center;
-  height: 200px;
-  font-size: 28px;
-  line-height: 39.2px;
-  letter-spacing: -0.56px;
-  font-weight: 400;
-  color: #222;
-  letter-spacing: -0.28px;
-  margin-bottom: 36px;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.sector-agree .agree-box {
-  width: 100%;
+.sector-setting .content-group > div {
   background-color: #fff;
   border-radius: 12px;
-  padding: 16px;
-  margin-bottom: 80px;
-  box-sizing: border-box;
-  display: inline-block;
+  padding: 15px 20px;
+  margin-bottom: 13px;
 }
-.sector-agree .agree-box .input-box {
-  position: relative;
-  width: 100%;
+.sector-setting .content-group > div:last-child {
+  margin-bottom: 105px;
 }
-.sector-agree .agree-box .input-box .check {
+.sector-setting .content-group > div .title-area {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 8px;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 19.6px;
+  letter-spacing: -0.32px;
+  font-weight: 400;
+  color: #ababab;
+  border-bottom: 1px solid #dcdee0;
+}
+.sector-setting .content-group > div .title-area .title {
+  margin-left: 4px;
+}
+.sector-setting .content-group > div.auto-box {
+  padding-bottom: 4px;
+}
+.sector-setting .content-group > div.auto-box .state-area .state {
+  margin-top: 12px;
+}
+.sector-setting .content-group > div.auto-box .state-area .state .kakao {
+  margin-bottom: 16px;
+}
+.sector-setting .content-group > div.auto-box .setting-area div:first-child {
+  padding-top: 0;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+.sector-setting .content-group > div.auto-box .setting-area div:first-child .ing {
+  padding: 16px 0 4px;
+}
+.sector-setting .content-group > div.auto-box .setting-area div:last-child {
+  margin-top: 12px;
+}
+.sector-setting .content-group > div.auto-box .setting-area div:last-child .ing.kakao {
+  border-top: none;
+}
+.sector-setting .content-group > div.auto-box .setting-area .btn.kakao {
+  margin-bottom: 25px;
+}
+.sector-setting .content-group > div:first-child .title-area {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.sector-setting .content-group > div.user-info-box .info-area table {
+  width: 100%;
+}
+.sector-setting .content-group > div.user-info-box .info-area table tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 4px 0;
   box-sizing: border-box;
 }
-.sector-agree .agree-box .input-box .check .check-text {
+.sector-setting .content-group > div.user-info-box .info-area table tr td {
   font-size: 16px;
   line-height: 19.09px;
   letter-spacing: -0.32px;
   font-weight: 400;
-  color: #1b1b1b;
-  letter-spacing: -0.16px;
+  color: #222;
 }
-.sector-agree .agree-box .input-box .check img {
-  width: 17px;
-  height: 17px;
+.sector-setting .content-group > div.condition-box li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 4px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 19.09px;
+  letter-spacing: -0.32px;
+  font-weight: 400;
+  color: #222;
 }
-.sector-agree .agree-box .input-box .agree-textarea {
-  border: 1px solid #888888;
-  background: #fff;
-  border-radius: 8px;
-  padding: 6px 12px;
-  overflow: auto;
-  height: 52px;
-  font-size: 12px;
-  line-height: 1.4;
-  margin: 0 12px;
-}
-.sector-agree .agree-box .line {
-  width: 100%;
-  margin: 0;
-}
-.sector-agree .agree-box .line:before {
-  left: -25px;
-}
-.sector-agree .agree-box .line:after {
-  right: -25px;
-}
-.sector-agree .btn {
-  bottom: 16px;
-}
-
-.sector-agree + .btn.bottom {
-  position: fixed !important;
-  bottom: 24px;
-  top: auto;
-  left: 50% !important;
-  transform: translateX(-50%);
-  width: calc(100% - 40px) !important;
+.sector-setting .content-group > div.btn-group {
+  background-color: transparent;
+  border-radius: none;
+  padding: 0;
 }

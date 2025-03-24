@@ -1,0 +1,77 @@
+@import "../main";
+
+.sector-club{
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include fontStyle(20px, 28px, 600);
+    @include letterSpacing(28px);
+    img{
+      width: 95px;
+      margin-bottom: 10px;
+    }
+  }
+  .benefit{
+    margin-top: 24px;
+    p{
+      @include fontStyle(18px, 25.2px, 600);
+      margin-bottom: 6px;
+    }
+    .benefit-box{
+      background: #EDEEEF;
+      border-radius: 8px;
+      padding:10px 16px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 14px;
+      img{
+        height:41px;
+      }
+      span{
+        @include fontStyle(14px, 19.6px, 400);
+   
+      }
+    }
+  }
+  .agree-box {
+    width: 100%;
+    background-color: $white;
+    border-radius: 12px;
+    padding: 16px 0;
+    box-sizing: border-box;
+
+    .input-box {
+      position: relative;
+      width: 100%;
+      .check {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 0;
+        box-sizing: border-box;
+
+        .check-text {
+          @include fontStyle(16px, 19.09px, 400, #1b1b1b);
+          @include letterSpacing(16px);
+        }
+      }
+      a img{
+        width: 17px;
+        height: 17px;
+      }
+      .agree-textarea{
+        border: 1px solid #888888;
+        background: #fff;
+        border-radius: 8px;
+        padding: 6px 12px;
+        overflow: auto;
+        height: 52px;
+        font-size: 12px;
+        line-height: 1.4;
+      }
+    }
+  }
+}
