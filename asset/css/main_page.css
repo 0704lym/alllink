@@ -1916,3 +1916,575 @@ main.flex .inner .btn.bottom {
 .footer span {
   display: block;
 }
+
+.auto-box .title-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.auto-box .title-area .title {
+  font-size: 16px;
+  line-height: 19.09px;
+  letter-spacing: -0.32px;
+  font-weight: 700;
+  color: #222;
+}
+.auto-box .title-area button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.auto-box .title-area button span {
+  width: 100%;
+  height: 100%;
+}
+.auto-box .setting-area.on {
+  padding-top: 0;
+  padding-bottom: 2px;
+}
+.auto-box .setting-area.on .naver-btn {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+.auto-box .setting-area.on .naver-btn .naver {
+  margin-bottom: 12px;
+}
+.auto-box .setting-area.on .kakao-btn {
+  margin-top: 0;
+}
+.auto-box .setting-area.on .btn {
+  margin-bottom: 0;
+}
+.auto-box .ing {
+  width: calc(100% - 0px);
+  margin: 0 auto;
+}
+.auto-box .ing.kakao {
+  border-top: 0;
+}
+
+.wood {
+  margin-bottom: 48px;
+}
+.wood .auto-box {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 18.5px 0;
+}
+.wood .setting-area {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+.wood .setting-area .ing.naver {
+  padding: 0;
+  margin-bottom: 0;
+}
+.wood .setting-area .ing.kakao {
+  padding-bottom: 0;
+  border-top: none;
+}
+.wood .setting-area.on .naver-btn .naver.ing {
+  margin-bottom: 0;
+}
+
+.content.sector-main {
+  padding: 12px 20px;
+}
+.content.sector-main .banner {
+  width: 100%;
+  height: 115px;
+  width: 100%;
+  height: 115px;
+  background-image: url("../image/common/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.content.sector-main .banner .banner-img {
+  width: 100%;
+  height: 100%;
+}
+.content.sector-main .receipt {
+  background-color: #fff;
+  border-radius: 16px;
+}
+.content.sector-main .receipt .receipt-cont {
+  position: relative;
+  padding-top: 10px;
+}
+.content.sector-main .receipt .receipt-cont .download {
+  display: flex;
+  padding: 0 10px;
+  justify-content: flex-end;
+}
+.content.sector-main .receipt .receipt-cont .download a {
+  margin-top: -10px;
+  display: inline-block;
+  font-size: 0;
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  background-image: url("../image/common/download.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.content.sector-main .receipt .receipt-cont .logo {
+  padding: 10px 24px;
+  text-align: center;
+  margin: 0 auto;
+  width: 203px;
+  height: 40px;
+  box-sizing: border-box;
+  width: 155px;
+  height: 30px;
+  background-image: url("../image/common/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.content.sector-main .receipt .receipt-cont .price {
+  padding: 12px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  font-weight: 400;
+  color: #222;
+}
+.content.sector-main .receipt .receipt-cont .amount {
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: -0.36px;
+  font-weight: 700;
+  color: #222;
+}
+.content.sector-main .receipt .cont-box {
+  position: relative;
+  padding-bottom: 12px;
+}
+.content.sector-main .receipt .cont-box > div {
+  padding: 12px 0;
+  margin: 0 20px;
+  box-sizing: border-box;
+}
+.content.sector-main .receipt .cont-box > div table {
+  width: 100%;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont {
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  font-weight: 400;
+  color: #222;
+  border-bottom: 1px solid #dcdee0;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table {
+  width: 100%;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table tr {
+  height: 24px;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table tr.title {
+  height: 32px;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table tr.title td {
+  text-align: center;
+  padding-bottom: 12px;
+  height: 20px;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table tr.title td:nth-child(2) {
+  text-align: left;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table tr.title td:last-child {
+  text-align: right;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table tr td {
+  padding-bottom: 4px;
+  vertical-align: middle;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table tr:last-child td {
+  padding-bottom: 12px;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table tr.item td:nth-child(3) {
+  text-align: center;
+}
+.content.sector-main .receipt .cont-box > div.purchase-cont table tr.item td:last-child {
+  text-align: right;
+}
+.content.sector-main .receipt .cont-box > div.tax-cont, .content.sector-main .receipt .cont-box > div.price-cont {
+  padding: 4px 0;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  font-weight: 400;
+  color: #888;
+  border-bottom: 1px solid #dcdee0;
+}
+.content.sector-main .receipt .cont-box > div.tax-cont td, .content.sector-main .receipt .cont-box > div.price-cont td {
+  height: 22px;
+  text-align: right;
+}
+.content.sector-main .receipt .cont-box > div.tax-cont td:first-child, .content.sector-main .receipt .cont-box > div.price-cont td:first-child {
+  padding-right: 10px;
+}
+.content.sector-main .receipt .cont-box > div.total-cont {
+  padding: 12px 0 0;
+}
+.content.sector-main .receipt .cont-box > div.total-cont tr {
+  padding-bottom: 8px;
+}
+.content.sector-main .receipt .cont-box > div.total-cont tr td {
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: -0.32px;
+  font-weight: 700;
+  color: #222;
+  padding-top: 8px;
+  height: 20px;
+}
+.content.sector-main .receipt .cont-box > div.total-cont tr td:last-child {
+  text-align: right;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .barcode {
+  text-align: center;
+  height: 70px;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .barcode img {
+  width: 245px;
+  height: 70px;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .barcode-num {
+  text-align: center;
+  font-size: 12px;
+  line-height: 22.4px;
+  letter-spacing: -0.24px;
+  font-weight: 400;
+  color: #222;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .company-info {
+  font-size: 12px;
+  line-height: 16.8px;
+  letter-spacing: -0.24px;
+  font-weight: 400;
+  color: #888;
+  padding-top: 12px;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .company-info .info-box {
+  display: flex;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .company-info .info-box > ul {
+  width: 50%;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .company-info .info-box > ul li {
+  padding: 2px 0;
+  height: 21px;
+  box-sizing: border-box;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .company-info .info-box > ul li:nth-child(3) {
+  padding-top: 0;
+  padding-bottom: 4px;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .company-info .info-box.second {
+  display: block;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .company-info .info-box.second p {
+  margin-bottom: 4px;
+  box-sizing: border-box;
+  height: 17px;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .company-info .info-box.second p:last-child {
+  margin-bottom: 0;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .point-state {
+  margin: 15px 0 0 0;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .point-state .btn {
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2db400;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .point-state .btn img {
+  height: 20px;
+  margin: -2px 6px 0 0;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .point-state .btn.complete {
+  border: 1px solid #2db400;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .point-state .btn.disable {
+  color: #fff;
+}
+.content.sector-main .receipt .cont-box > div.company-cont .point-state .btn.review {
+  border: 1px solid #2db400;
+  background: #2db400;
+  color: #fff;
+}
+.content.sector-main .receipt .cont-box:before {
+  content: "";
+  display: inline-block;
+  margin: 0 auto;
+  width: 258px;
+  height: 100px;
+  background-image: url("../image/common/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 73%;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.1;
+}
+.content.sector-main .receipt .auto-box .title-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.content.sector-main .receipt .auto-box .title-area .title {
+  font-size: 16px;
+  line-height: 19.09px;
+  letter-spacing: -0.32px;
+  font-weight: 700;
+  color: #222;
+}
+.content.sector-main .receipt .auto-box .title-area button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.content.sector-main .receipt .auto-box .title-area button span {
+  width: 100%;
+  height: 100%;
+}
+.content.sector-main .receipt .auto-box .setting-area.on {
+  padding-top: 0;
+  padding-bottom: 2px;
+}
+.content.sector-main .receipt .auto-box .setting-area.on .naver-btn {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+.content.sector-main .receipt .auto-box .setting-area.on .naver-btn .naver {
+  margin-bottom: 12px;
+}
+.content.sector-main .receipt .auto-box .setting-area.on .kakao-btn {
+  margin-top: 0;
+}
+.content.sector-main .receipt .auto-box .setting-area.on .btn {
+  margin-bottom: 0;
+}
+.content.sector-main .receipt .auto-box .ing {
+  width: calc(100% - 0px);
+  margin: 0 auto;
+}
+.content.sector-main .receipt .auto-box .ing.kakao {
+  border-top: 0;
+}
+.content.sector-main .receipt .wood {
+  margin-bottom: 48px;
+}
+.content.sector-main .receipt .wood .auto-box {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 18.5px 0;
+}
+.content.sector-main .receipt .wood .setting-area {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+.content.sector-main .receipt .wood .setting-area .ing.naver {
+  padding: 0;
+  margin-bottom: 0;
+}
+.content.sector-main .receipt .wood .setting-area .ing.kakao {
+  padding-bottom: 0;
+  border-top: none;
+}
+.content.sector-main .receipt .wood .setting-area.on .naver-btn .naver.ing {
+  margin-bottom: 0;
+}
+.content.sector-main .receipt .btn-cont {
+  position: relative;
+  z-index: 2;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+.content.sector-main .receipt .btn-cont .btn-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 12px;
+}
+.content.sector-main .receipt .btn-cont .btn {
+  position: relative;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+.content.sector-main .receipt .btn-cont .btn.kakao {
+  margin-bottom: 0;
+}
+.content.sector-main .receipt .btn-cont.setting {
+  padding-bottom: 22px;
+}
+.content.sector-main .receipt.jeju {
+  position: relative;
+}
+.content.sector-main .receipt.jeju:before, .content.sector-main .receipt.jeju:after {
+  content: "";
+  display: inline-block;
+  margin: 0 auto;
+  width: 20px;
+  height: 99%;
+  background-image: url("../image/common/logo_hori.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: no-repeat space;
+  background-position: 0 0;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 20spx;
+  height: calc(100% - 20px);
+  opacity: 0.1;
+  z-index: 0;
+}
+.content.sector-main .receipt.jeju:after {
+  left: auto;
+  right: 20px;
+}
+.content.sector-main .receipt.jeju .logo {
+  padding: 10px 24px;
+  text-align: center;
+  margin: 0 auto;
+  width: 203px;
+  height: 40px;
+  box-sizing: border-box;
+  width: 155px;
+  height: 30px;
+  background-image: url("../image/common/logo_jeju.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.content.sector-main .receipt.jeju .cont-box:before {
+  display: none;
+}
+
+.msg-point {
+  text-align: center;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  font-weight: 400;
+  color: #222;
+}
+.msg-point a {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.28px;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 1px solid #000;
+}
+.msg-point img {
+  height: 15px;
+}
+.msg-point em {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.28px;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 1px solid #000;
+}
+
+.bubble-top {
+  border: 1px solid #888;
+  border-radius: 8px;
+  margin: 10px 66px;
+  background: #fff;
+  position: relative;
+}
+.bubble-top.type-full {
+  margin: 10px 20px;
+}
+.bubble-top.type-full:after {
+  content: "";
+  width: 14px;
+  height: 10px;
+  background-image: url("../image/common/ico_top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  position: absolute;
+  top: -8px;
+  left: 35%;
+}
+.bubble-top:after {
+  content: "";
+  width: 14px;
+  height: 10px;
+  background-image: url("../image/common/ico_top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  position: absolute;
+  top: -8px;
+  left: calc(50% + 60px);
+}
+
+.msg-text {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+}
+
+.shop-list {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow: auto;
+}
+.shop-list ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.shop-list ul li {
+  width: 33.3333333333%;
+}
+.shop-list ul li img {
+  width: 100%;
+}

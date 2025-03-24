@@ -1,0 +1,77 @@
+@import "../main";
+
+  // sector-agree 008 약관동의
+  .sector-agree {
+    .title {
+      display: flex;
+      align-items: center;
+      height: 200px;
+      @include fontStyle(28px, 39.2px, 400);
+      @include letterSpacing(28px);
+      margin-bottom: 36px;
+    }
+
+    .agree-box {
+      width: 100%;
+      background-color: $white;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 80px;
+      box-sizing: border-box;
+      display: inline-block;
+      .input-box {
+        position: relative;
+        width: 100%;
+        .check {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px 8px;
+          box-sizing: border-box;
+
+          .check-text {
+            @include fontStyle(16px, 19.09px, 400, #1b1b1b);
+            @include letterSpacing(16px);
+          }
+          img{
+            width: 17px;
+            height: 17px;
+          }
+        }
+        .agree-textarea{
+          border: 1px solid #888888;
+          background: #fff;
+          border-radius: 8px;
+          padding: 6px 12px;
+          overflow: auto;
+          height: 52px;
+          font-size: 12px;
+          line-height: 1.4;
+          margin: 0 12px;
+        }
+      }
+
+      .line {
+        width: 100%;
+       margin: 0;
+        &:before {
+          left: -25px;
+        }
+        &:after {
+          right: -25px;
+        }
+      }
+    }
+    .btn {
+      bottom: 16px;
+    }
+  }
+  .sector-agree + .btn.bottom{
+    position: fixed !important;
+    bottom: 24px;
+    top: auto;
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: calc(100% - 40px) !important;
+    max-width: 355px;
+  }
