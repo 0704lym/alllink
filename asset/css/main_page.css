@@ -168,49 +168,49 @@ body {
   font-family: Pretendard;
   font-weight: 700;
   font-style: normal;
-  src: url("../font/Pretendard-Bold.woff") format("woff"), url("../font/Pretendard-Bold.otf") format("opentype"), url("../font/Pretendard-Bold.ttf") format("truetype");
+  src: url("/asset/font/Pretendard-Bold.woff") format("woff"), url("/asset/font/Pretendard-Bold.otf") format("opentype"), url("/asset/font/Pretendard-Bold.ttf") format("truetype");
 }
 @font-face {
   font-family: Pretendard;
   font-weight: 600;
   font-style: normal;
-  src: url("../font/Pretendard-SemiBold.woff") format("woff"), url("../font/Pretendard-SemiBold.otf") format("opentype"), url("../font/Pretendard-SemiBold.ttf") format("truetype");
+  src: url("/asset/font/Pretendard-SemiBold.woff") format("woff"), url("/asset/font/Pretendard-SemiBold.otf") format("opentype"), url("/asset/font/Pretendard-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-family: Pretendard;
   font-weight: 500;
   font-style: normal;
-  src: url("../font/Pretendard-Medium.woff") format("woff"), url("../font/Pretendard-Medium.otf") format("opentype"), url("../font/Pretendard-Medium.ttf") format("truetype");
+  src: url("/asset/font/Pretendard-Medium.woff") format("woff"), url("/asset/font/Pretendard-Medium.otf") format("opentype"), url("/asset/font/Pretendard-Medium.ttf") format("truetype");
 }
 @font-face {
   font-family: Pretendard;
   font-weight: 400;
   font-style: normal;
-  src: url("../font/Pretendard-Regular.woff") format("woff"), url("../font/Pretendard-Regular.otf") format("opentype"), url("../font/Pretendard-Regular.ttf") format("truetype");
+  src: url("/asset/font/Pretendard-Regular.woff") format("woff"), url("/asset/font/Pretendard-Regular.otf") format("opentype"), url("/asset/font/Pretendard-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: NanumSquare;
   font-weight: 700;
   font-style: normal;
-  src: url("../font/NanumSquareOTF_0.woff") format("woff"), url("../font/NanumSquareOTF_0.otf") format("opentype"), url("../font/NanumSquareOTF_0.ttf") format("truetype");
+  src: url("/asset/font/NanumSquareOTF_0.woff") format("woff"), url("/asset/font/NanumSquareOTF_0.otf") format("opentype"), url("/asset/font/NanumSquareOTF_0.ttf") format("truetype");
 }
 @font-face {
   font-family: NanumSquare;
   font-weight: 600;
   font-style: normal;
-  src: url("../font/NanumSquareOTF.woff") format("woff"), url("../font/NanumSquareOTF.otf") format("opentype"), url("../font/NanumSquareOTF.ttf") format("truetype");
+  src: url("/asset/font/NanumSquareOTF.woff") format("woff"), url("/asset/font/NanumSquareOTF.otf") format("opentype"), url("/asset/font/NanumSquareOTF.ttf") format("truetype");
 }
 @font-face {
   font-family: NanumSquare;
   font-weight: 500;
   font-style: normal;
-  src: url("../font/NanumSquareOTF_acR.woff") format("woff"), url("../font/NanumSquareOTF_acR.otf") format("opentype"), url("../font/NanumSquareOTF_acR.ttf") format("truetype");
+  src: url("/asset/font/NanumSquareOTF_acR.woff") format("woff"), url("/asset/font/NanumSquareOTF_acR.otf") format("opentype"), url("/asset/font/NanumSquareOTF_acR.ttf") format("truetype");
 }
 @font-face {
   font-family: NanumSquare;
   font-weight: 400;
   font-style: normal;
-  src: url("../font/NanumSquareOTF_acL.woff") format("woff"), url("../font/NanumSquareOTF_acL.otf") format("opentype"), url("../font/NanumSquareOTF_acL.ttf") format("truetype");
+  src: url("/asset/font/NanumSquareOTF_acL.woff") format("woff"), url("/asset/font/NanumSquareOTF_acL.otf") format("opentype"), url("/asset/font/NanumSquareOTF_acL.ttf") format("truetype");
 }
 body.white {
   background-color: #fff;
@@ -530,7 +530,7 @@ button.cancel {
   border-radius: 8px;
   width: 265px;
   height: 46px;
-  background-image: url("../image//common/bubble.png");
+  background-image: url("/asset/image//common/bubble.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -553,7 +553,7 @@ button.cancel {
   width: 310px;
   width: 310px;
   height: 46px;
-  background-image: url("../image//common/bubble_black.png");
+  background-image: url("/asset/image//common/bubble_black.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -562,7 +562,7 @@ button.cancel {
   width: 240px;
   width: 240px;
   height: 46px;
-  background-image: url("../image//common/bubble_green.png");
+  background-image: url("/asset/image//common/bubble_green.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -585,7 +585,7 @@ button.cancel {
   left: 50%;
   width: 15px;
   height: 10px;
-  background-image: url("../image//icon/bubble-bottom.svg");
+  background-image: url("/asset/image//icon/bubble-bottom.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -660,7 +660,7 @@ button.cancel {
   box-sizing: border-box;
   width: 288px;
   height: 90px;
-  background-image: url("../image/common/bg_wood.png");
+  background-image: url("/asset/image/common/bg_wood.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -834,7 +834,7 @@ button.cancel {
   height: 20px;
   width: 20px;
   height: 20px;
-  background-image: url("../image//icon/check.svg");
+  background-image: url("/asset/image//icon/check.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -842,7 +842,7 @@ button.cancel {
 .auto-box .default .state-area span.naver:before {
   width: 20px;
   height: 20px;
-  background-image: url("../image//icon/check_white.svg");
+  background-image: url("/asset/image//icon/check_white.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -886,7 +886,7 @@ button.cancel {
   height: 24px;
   width: 24px;
   height: 24px;
-  background-image: url("../image//icon/naver.svg");
+  background-image: url("/asset/image//icon/naver.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -898,7 +898,7 @@ button.cancel {
 .auto-box .setting-area .ing.kakao span:before {
   width: 24px;
   height: 24px;
-  background-image: url("../image//icon/kakao.svg");
+  background-image: url("/asset/image//icon/kakao.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -936,7 +936,7 @@ input[type=checkbox]:checked + label:after {
   border-radius: 2px;
   width: 16px;
   height: 16px;
-  background-image: url("../image/icon/check_fill.svg");
+  background-image: url("/asset/image/icon/check_fill.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1036,7 +1036,7 @@ input[type=checkbox]:checked + label:after {
 .icon.left-arrow {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/chevron_left.svg");
+  background-image: url("/asset/image/icon/chevron_left.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1044,7 +1044,7 @@ input[type=checkbox]:checked + label:after {
 .icon.right-arrow {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/chevron_left.svg");
+  background-image: url("/asset/image/icon/chevron_left.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1053,7 +1053,7 @@ input[type=checkbox]:checked + label:after {
 .icon.bottom-arrow {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/bottom_arrow.svg");
+  background-image: url("/asset/image/icon/bottom_arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1064,7 +1064,7 @@ input[type=checkbox]:checked + label:after {
 .icon.more {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/more.svg");
+  background-image: url("/asset/image/icon/more.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1072,7 +1072,7 @@ input[type=checkbox]:checked + label:after {
 .icon.download {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/download.svg");
+  background-image: url("/asset/image/icon/download.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1080,7 +1080,7 @@ input[type=checkbox]:checked + label:after {
 .icon.download-black {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/download_black.svg");
+  background-image: url("/asset/image/icon/download_black.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1088,7 +1088,7 @@ input[type=checkbox]:checked + label:after {
 .icon.plus {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/plus.svg");
+  background-image: url("/asset/image/icon/plus.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1096,7 +1096,7 @@ input[type=checkbox]:checked + label:after {
 .icon.plus-white {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/plus_white.svg");
+  background-image: url("/asset/image/icon/plus_white.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1104,7 +1104,7 @@ input[type=checkbox]:checked + label:after {
 .icon.plus-red {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/plus_red.svg");
+  background-image: url("/asset/image/icon/plus_red.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1112,7 +1112,7 @@ input[type=checkbox]:checked + label:after {
 .icon.plus-gray {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/plus_gray.svg");
+  background-image: url("/asset/image/icon/plus_gray.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1120,7 +1120,7 @@ input[type=checkbox]:checked + label:after {
 .icon.settings {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/settings.svg");
+  background-image: url("/asset/image/icon/settings.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1128,7 +1128,7 @@ input[type=checkbox]:checked + label:after {
 .icon.done {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/done.svg");
+  background-image: url("/asset/image/icon/done.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1136,7 +1136,7 @@ input[type=checkbox]:checked + label:after {
 .icon.cancel {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/cancel.svg");
+  background-image: url("/asset/image/icon/cancel.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1144,7 +1144,7 @@ input[type=checkbox]:checked + label:after {
 .icon.logo {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/logo.svg");
+  background-image: url("/asset/image/icon/logo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1152,7 +1152,7 @@ input[type=checkbox]:checked + label:after {
 .icon.close {
   width: 24px;
   height: 24px;
-  background-image: url("../image/icon/close.svg");
+  background-image: url("/asset/image/icon/close.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1160,7 +1160,7 @@ input[type=checkbox]:checked + label:after {
 .icon.shield {
   width: 56px;
   height: 53px;
-  background-image: url("../image/icon/shield.svg");
+  background-image: url("/asset/image/icon/shield.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1168,7 +1168,7 @@ input[type=checkbox]:checked + label:after {
 .icon.coin {
   width: 56px;
   height: 53px;
-  background-image: url("../image/icon/coin.svg");
+  background-image: url("/asset/image/icon/coin.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1176,7 +1176,7 @@ input[type=checkbox]:checked + label:after {
 .icon.gift {
   width: 59px;
   height: 54.66px;
-  background-image: url("../image/icon/gift.svg");
+  background-image: url("/asset/image/icon/gift.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1184,7 +1184,7 @@ input[type=checkbox]:checked + label:after {
 .icon.coupon {
   width: 59px;
   height: 50px;
-  background-image: url("../image/icon/coupon.svg");
+  background-image: url("/asset/image/icon/coupon.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1192,7 +1192,7 @@ input[type=checkbox]:checked + label:after {
 .icon.event {
   width: 59px;
   height: 50px;
-  background-image: url("../image/icon/event.svg");
+  background-image: url("/asset/image/icon/event.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1200,7 +1200,7 @@ input[type=checkbox]:checked + label:after {
 .icon.kakao {
   width: 25px;
   height: 25px;
-  background-image: url("../image/icon/kakao.svg");
+  background-image: url("/asset/image/icon/kakao.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1208,7 +1208,7 @@ input[type=checkbox]:checked + label:after {
 .icon.naver {
   width: 25px;
   height: 25px;
-  background-image: url("../image/icon/naver.svg");
+  background-image: url("/asset/image/icon/naver.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1216,7 +1216,7 @@ input[type=checkbox]:checked + label:after {
 .icon.tooltip {
   width: 22.67px;
   height: 22.67px;
-  background-image: url("../image/icon/tool_tip.png");
+  background-image: url("/asset/image/icon/tool_tip.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1386,7 +1386,7 @@ input[type=checkbox]:checked + label:after {
   right: 40px;
   width: 96px;
   height: 77px;
-  background-image: url("../image/common/ico_attention.png");
+  background-image: url("/asset/image/common/ico_attention.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1404,7 +1404,7 @@ input[type=checkbox]:checked + label:after {
   right: 40px;
   width: 90px;
   height: 96px;
-  background-image: url("../image/common/ico_public.png");
+  background-image: url("/asset/image/common/ico_public.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1422,7 +1422,7 @@ input[type=checkbox]:checked + label:after {
   right: 40px;
   width: 107px;
   height: 86px;
-  background-image: url("../image/common/ico_won.png");
+  background-image: url("/asset/image/common/ico_won.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1440,7 +1440,7 @@ input[type=checkbox]:checked + label:after {
   right: 40px;
   width: 118px;
   height: 95px;
-  background-image: url("../image/common/ico_review.png");
+  background-image: url("/asset/image/common/ico_review.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1458,7 +1458,7 @@ input[type=checkbox]:checked + label:after {
   right: 40px;
   width: 118px;
   height: 95px;
-  background-image: url("../image/common/ico_thanku.png");
+  background-image: url("/asset/image/common/ico_thanku.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1476,7 +1476,7 @@ input[type=checkbox]:checked + label:after {
   right: 40px;
   width: 118px;
   height: 95px;
-  background-image: url("../image/common/ico_forest.png");
+  background-image: url("/asset/image/common/ico_forest.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1494,7 +1494,7 @@ input[type=checkbox]:checked + label:after {
   right: 20px;
   width: 118px;
   height: 95px;
-  background-image: url("../image/common/ico_trophy.png");
+  background-image: url("/asset/image/common/ico_trophy.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1512,7 +1512,7 @@ input[type=checkbox]:checked + label:after {
   right: 40px;
   width: 118px;
   height: 95px;
-  background-image: url("../image/common/ico_note.png");
+  background-image: url("/asset/image/common/ico_note.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1530,7 +1530,7 @@ input[type=checkbox]:checked + label:after {
   right: 0px;
   width: 139px;
   height: 195px;
-  background-image: url("../image/common/ico_tree.png");
+  background-image: url("/asset/image/common/ico_tree.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1548,7 +1548,7 @@ input[type=checkbox]:checked + label:after {
   right: -5px;
   width: 213px;
   height: 217px;
-  background-image: url("../image/common/ico_welcome.png");
+  background-image: url("/asset/image/common/ico_welcome.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1883,7 +1883,7 @@ main.flex .inner .btn.bottom {
   padding: 0;
   width: calc(100% - 40px);
   height: 20px;
-  background-image: url("../image/common/line.png");
+  background-image: url("/asset/image/common/line.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1998,7 +1998,7 @@ main.flex .inner .btn.bottom {
   height: 115px;
   width: 100%;
   height: 115px;
-  background-image: url("../image/common/banner.png");
+  background-image: url("/asset/image/common/banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2029,7 +2029,7 @@ main.flex .inner .btn.bottom {
   box-sizing: border-box;
   width: 36px;
   height: 36px;
-  background-image: url("../image/common/download.png");
+  background-image: url("/asset/image/common/download.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2044,7 +2044,7 @@ main.flex .inner .btn.bottom {
   box-sizing: border-box;
   width: 155px;
   height: 30px;
-  background-image: url("../image/common/logo.png");
+  background-image: url("/asset/image/common/logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2237,7 +2237,7 @@ main.flex .inner .btn.bottom {
   margin: 0 auto;
   width: 258px;
   height: 100px;
-  background-image: url("../image/common/logo.png");
+  background-image: url("/asset/image/common/logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 73%;
@@ -2354,7 +2354,7 @@ main.flex .inner .btn.bottom {
   margin: 0 auto;
   width: 20px;
   height: 99%;
-  background-image: url("../image/common/logo_hori.png");
+  background-image: url("/asset/image/common/logo_hori.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -2381,7 +2381,7 @@ main.flex .inner .btn.bottom {
   box-sizing: border-box;
   width: 155px;
   height: 30px;
-  background-image: url("../image/common/logo_jeju.png");
+  background-image: url("/asset/image/common/logo_jeju.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2434,7 +2434,7 @@ main.flex .inner .btn.bottom {
   content: "";
   width: 14px;
   height: 10px;
-  background-image: url("../image/common/ico_top.png");
+  background-image: url("/asset/image/common/ico_top.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2450,7 +2450,7 @@ main.flex .inner .btn.bottom {
   content: "";
   width: 14px;
   height: 10px;
-  background-image: url("../image/common/ico_top.png");
+  background-image: url("/asset/image/common/ico_top.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
