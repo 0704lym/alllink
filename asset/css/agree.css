@@ -1993,4 +1993,5 @@ main.flex .inner .btn.bottom {
   left: 50% !important;
   transform: translateX(-50%);
   width: calc(100% - 40px) !important;
+  max-width: 355px;
 }
